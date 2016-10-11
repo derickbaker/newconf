@@ -10,6 +10,6 @@
 @import 'config/_mixins'; // Use mixins when you need to change some variables or do maths
 
 // Component
-@import 'components/_nav';
-@import 'components/_showcase';
-@import 'components/_workshops';
+@import 'components/_header.scss';
+@import 'components/_showcase.scss';
+@import 'components/_workshops.scss';

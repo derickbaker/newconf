@@ -1,14 +1,6 @@
 #showcase {
     height: 100vh;
 
-    .navbar {
-        background-color: transparent;
-        border: 0;
-        @include position(absolute, 0 null null null);
-        width: 100%;
-        z-index: $z-one;
-    }
-
     .showcaseVideo-wrapper {
         @include position(absolute, 0 null null 0);
         width: 100%;
@@ -26,7 +18,7 @@
     }
 
     .text {
-        @include position (absolute, null null 80px null);
+        @include position (absolute, null null 100px null);
         z-index: $z-two;
 
         h6 {

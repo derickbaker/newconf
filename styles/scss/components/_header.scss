@@ -1,0 +1,30 @@
+#navigation {
+        background-color: transparent;
+        border: 0;
+        margin: 0;
+        padding-top: 20px;
+        @include position(absolute, 0 null null null);
+        width: 100%;
+        z-index: $z-one;
+
+        .navbar-nav > li > a {
+            color:#fff;
+            font-family: $ff-raleway;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 50px;
+            padding: 0;
+            margin-left: 70px;
+        }
+
+        .navbar-nav > li.active a,
+        .navbar-nav > li.active a:hover,
+        .navbar-nav > li.active a:focus {
+            background-color: transparent;
+        }
+        .navbar-brand {
+            height: 100px;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+}

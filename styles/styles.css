@@ -5,7 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,700';
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,700|Raleway:300,700';
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -5816,15 +5816,34 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 10px;
   margin-top: 20px; }
 
+#navigation {
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  padding-top: 20px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 100; }
+  #navigation .navbar-nav > li > a {
+    color: #fff;
+    font-family: "Raleway", "Helvetica Neue", "Helvetica", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 50px;
+    padding: 0;
+    margin-left: 70px; }
+  #navigation .navbar-nav > li.active a,
+  #navigation .navbar-nav > li.active a:hover,
+  #navigation .navbar-nav > li.active a:focus {
+    background-color: transparent; }
+  #navigation .navbar-brand {
+    height: 100px;
+    padding-top: 0;
+    padding-bottom: 0; }
+
 #showcase {
   height: 100vh; }
-  #showcase .navbar {
-    background-color: transparent;
-    border: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 100; }
   #showcase .showcaseVideo-wrapper {
     position: absolute;
     top: 0;
@@ -5847,7 +5866,7 @@ h1, h2, h3, h4, h5, h6 {
       z-index: 10; }
   #showcase .text {
     position: absolute;
-    bottom: 80px;
+    bottom: 100px;
     z-index: 200; }
     #showcase .text h6 {
       color: #2196F3;

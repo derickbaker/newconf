@@ -6,10 +6,11 @@
 // Fonts (Google Fonts, Font Squirrel, something else?)
 // The mixin for @font-face is in _mixins.scss! Check it out!
 $font-icomoon: 'icomoon';
-@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,700';
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,700|Raleway:300,700';
 
 // Font Variables   
 $ff-roboto: 'Roboto', "Helvetica Neue", "Helvetica", sans-serif;
+$ff-raleway: 'Raleway', "Helvetica Neue", "Helvetica", sans-serif;
 $ff-helvetica: "Helvetica Neue", "Helvetica", sans-serif;
 
 // Font Sizes
