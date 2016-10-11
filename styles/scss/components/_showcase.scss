@@ -1,0 +1,86 @@
+#showcase {
+    height: 100vh;
+
+    .navbar {
+        background-color: transparent;
+        border: 0;
+        @include position(absolute, 0 null null null);
+        width: 100%;
+        z-index: $z-one;
+    }
+
+    .showcaseVideo-wrapper {
+        @include position(absolute, 0 null null 0);
+        width: 100%;
+        height: 100%;
+
+        &:before {
+            content: ' ';
+            display: block;
+            @include position(absolute, 0 0 0 0);
+            @include opacity(0.7);
+            @include background(url("../images/diagonalstripe.png"), center repeat transparent);
+            background-size: 4px 4px;
+            z-index:  $z-ten;
+        }
+    }
+
+    .text {
+        @include position (absolute, null null 80px null);
+        z-index: $z-two;
+
+        h6 {
+            color: $blue;
+            font-family: $ff-roboto;
+            font-size: 12px;
+            letter-spacing: 3px;
+            line-height: 16px;
+            margin: 0;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            text-transform: uppercase;
+            -webkit-backface-visibility: hidden;
+        }
+
+        .dash {
+            display: inline-block;
+
+            &:after {
+                border-bottom: 3px solid $blue;
+                content: ' ';
+                clear: both;
+                display: block;
+                float: left;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                width: 100%;
+            }
+        }
+
+        h2 {
+            color: #fff;
+            font-family: $ff-roboto;
+            font-size: 60px;
+            font-weight: 700;
+            letter-spacing: -1.5px;
+            line-height: 60px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin: 0;
+        }
+        .headline {
+            display: block;
+
+            b {
+                color: #3ea2e0;
+            }
+        }
+        .confDate {
+            color: #fff;
+            font-family: $ff-roboto;
+            font-size: 18px;
+            padding-top: 0;
+            line-height: 28px;
+        }
+    }
+}

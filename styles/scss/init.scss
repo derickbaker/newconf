@@ -1,0 +1,15 @@
+// Base
+@import 'bourbon';
+@import './node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
+
+//config
+@import 'config/_colors';
+@import 'config/_settings';
+@import 'config/_typography';
+//@import '../fonts/icomoon/style.css';
+@import 'config/_mixins'; // Use mixins when you need to change some variables or do maths
+
+// Component
+@import 'components/_nav';
+@import 'components/_showcase';
+@import 'components/_workshops';

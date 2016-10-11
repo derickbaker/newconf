@@ -1,0 +1,30 @@
+// Global Web Typography
+//
+// (Colors are in the _colors.scss partial)
+
+
+// Fonts (Google Fonts, Font Squirrel, something else?)
+// The mixin for @font-face is in _mixins.scss! Check it out!
+$font-icomoon: 'icomoon';
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,700';
+
+// Font Variables   
+$ff-roboto: 'Roboto', "Helvetica Neue", "Helvetica", sans-serif;
+$ff-helvetica: "Helvetica Neue", "Helvetica", sans-serif;
+
+// Font Sizes
+$fw-thin: 100;
+$fw-light: 300;
+$fw-reg: 400;
+$fw-semi: 600;
+$fw-bold: 700;
+$fw-exbold: 900;
+
+// Applies to all headers
+h1, h2, h3, h4, h5, h6 { 
+  font-family: $ff-roboto;
+  font-weight: $fw-bold;
+  line-height: 1.1;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
