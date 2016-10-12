@@ -1,9 +1,14 @@
 #navigation {
         background-color: transparent;
         border: 0;
+        border-radius: 0;
         margin: 0;
         padding-top: 20px;
-        @include position(absolute, 0 null null null);
+        padding-right: 15px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        @include position(absolute, null null null null);
+        @include transform(translateY(0));
         width: 100%;
         z-index: $z-one;
 
@@ -14,9 +19,46 @@
             font-weight: 700;
             line-height: 50px;
             padding: 0;
+            
+            &.menu-link {
+                font-size: 32px;
+
+                .icon-cross4 {
+                    display: none;
+                }
+
+                &.active {
+
+                    .icon-cross4 {
+                        display: inline;
+                    }
+
+                    .icon-menu11 {
+                        display: none;
+                    }
+
+                }
+            }
+
+            &:hover,
+            &:focus {
+                color: $blue;
+            }
+        }
+        .navbar-nav.main {
+            padding-top:25px;
+            padding-right: 15px;
+        }
+        .navbar-nav.main > li > a {
             margin-left: 70px;
         }
+        .navbar-nav.social {
+            margin-left: 70px;
 
+            li > a {
+                margin-left: .5em;
+            }
+        }
         .navbar-nav > li.active a,
         .navbar-nav > li.active a:hover,
         .navbar-nav > li.active a:focus {
@@ -26,5 +68,109 @@
             height: 100px;
             padding-top: 0;
             padding-bottom: 0;
+
+            svg {
+                height: 100px;
+
+                .\36 3157878-2ef0-4800-965c-c7fc4a30e712 {
+                    fill:#fff
+                }
+                .\30 3d4419a-7fdb-4dc7-ad30-df1f4e955ccd,
+                .\33 ce85440-e5a3-482c-8c51-03792b31ae54,
+                .\35 154cc6d-9675-4d2c-91c2-ef1f60584d3b,
+                .\37 16c9e6c-de01-42d7-8268-93869633b309,
+                .\38 e93c8bd-90f3-45f6-92f5-03ba7ec3b051 {
+                    fill-rule:evenodd
+                }
+                .\30 3d4419a-7fdb-4dc7-ad30-df1f4e955ccd {
+                    fill:url(#43c3fcc9-8f38-42f8-be63-420599a75c3a)
+                }
+                .\33 ce85440-e5a3-482c-8c51-03792b31ae54{
+                    fill:url(#0c88849b-8218-4651-bc6a-59561370e110)
+                }
+                .\35 154cc6d-9675-4d2c-91c2-ef1f60584d3b{
+                    fill:url(#f9a9b2ed-74e6-43ca-9656-61c164c51bcb)
+                }
+                .\38 e93c8bd-90f3-45f6-92f5-03ba7ec3b051{
+                    fill:url(#a977ce24-3b0f-4736-a113-b00623b461ee)
+                }
+                .\37 16c9e6c-de01-42d7-8268-93869633b309{
+                    fill:url(#996db6d7-e272-4686-a53b-10aa01abb202)
+                }
+            }
         }
+
+        &.affix {
+            background-color: rgba(255,255,255,.9);
+            box-shadow: 0 1px 3px rgba(0,0,0,.11);
+            padding-top: 10px;
+            @include position(fixed, null null null null);
+            @include transform(translateY(-100%));
+            
+            z-index: $z-three;
+        }
+
+        &.affix {
+            
+            @include transition(transform 0.5s cubic-bezier(0.23, 1, 0.32, 1));
+            @include transform(translateY(0));
+
+            .navbar-brand {
+                height: 80px;
+            }
+            .navbar-brand svg {
+                height: 80px;
+
+                .\36 3157878-2ef0-4800-965c-c7fc4a30e712 {
+                    fill:#000;
+                }
+            }
+            .navbar-nav.main {
+                padding-top: 15px;
+            }
+            .navbar-nav > li > a {
+                color: #333;
+
+                &:hover,
+                &:focus {
+                    color: $blue;
+                }
+            }
+        }
+}
+
+#fullMenu {
+    @include position(fixed, null -300px null null);
+    @include size(300px, 100%);
+
+    &.fullMenu-panel {
+        background: $wht;
+    }
+
+    .fullMenu-content {
+        margin-top: 24px;
+        padding: 0 30px;
+    }
+
+    .fullMenu-header {}
+
+    ul {
+        margin-bottom: 24px;
+    }
+    ul > li {
+  
+    } 
+    ul > li > a {
+        color: #333;
+        display: block;
+        font-weight: 700;
+        line-height: 1.1;
+        padding: 15px 10px;
+
+        &:hover,
+        &:focus {
+            color: $blue;
+            text-decoration: none;
+        }
+    }
 }

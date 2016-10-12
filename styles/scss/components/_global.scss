@@ -1,0 +1,59 @@
+body {
+    font-size: 16px;
+    position: relative;
+}
+a {
+  color: $blue;
+  text-decoration: none;
+
+  &:hover, 
+  &:focus {
+    color: darken($blue,15%);
+    text-decoration: underline;
+  } 
+}
+.section-header {
+    display: block;
+    margin-bottom: 10px;
+
+    .shsuperTitle {
+        color: $blue;
+        font-family: $ff-roboto;
+        font-size: 24px;
+        font-weight: $fw-light;
+        letter-spacing: -1px;
+        line-height: 34px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+    .shsubTitle {
+        font-family: $ff-roboto;
+        font-size: 24px;
+        line-height: 34px;
+    }
+    .dash {
+        display: inline-block;
+
+        &:after {
+            border-bottom: 3px solid $blue;
+            clear: both;
+            content: '';
+            display: block;
+            float: left;
+            margin-top: 5px;
+            margin-bottom: 8px;
+            width: 100%;
+        }
+
+        h1 {
+            font-family: $ff-roboto;
+            font-size: 90px;
+            font-weight: 700;
+            letter-spacing: -4px;
+            line-height: 96px;
+            margin: 0;
+            padding-top: 2px;
+            padding-bottom: 2px;
+        }
+    }
+}

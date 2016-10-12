@@ -12,3 +12,48 @@ $z-three: 300;
 $z-four: 400;
 $z-five: 500;
 $z-over: 9999;
+
+// Site Preloader
+#preloader {
+    background: #fff;
+    @include position(fixed, 0 0 0 0);
+    @include size(100%, 100%);
+    z-index: $z-over;
+    
+    .inner {
+        @include position(relative, 50% null null null);
+        @include transform(translateY(-50%));
+    }
+
+    .loader {
+      margin: 0 auto;
+      font-size: 10px;
+      position: relative;
+      text-indent: -9999em;
+      border-top: 1.1em solid rgba(33, 150, 243, 0.2);
+      border-right: 1.1em solid rgba(33, 150, 243, 0.2);
+      border-bottom: 1.1em solid rgba(33, 150, 243, 0.2);
+      border-left: 1.1em solid #2aa8ff;
+      @include transform(translateZ(0));
+      @include animation(load8 1.1s infinite linear);
+    }
+
+    .loader,
+    .loader:after {
+      border-radius: 50%;
+      @include size(10em, 10em);
+    }
+}
+@include keyframes(load8) {
+  from {
+    @include transform(rotate(0deg));
+  }
+  to {
+    @include transform(rotate(360deg));
+  }
+}
+
+#page-wrapper {
+  position: relative;
+  @include size(100%,100%);
+}

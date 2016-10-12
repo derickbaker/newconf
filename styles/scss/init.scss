@@ -6,10 +6,13 @@
 @import 'config/_colors';
 @import 'config/_settings';
 @import 'config/_typography';
-//@import '../fonts/icomoon/style.css';
+@import '../fonts/icomoon/style.css';
 @import 'config/_mixins'; // Use mixins when you need to change some variables or do maths
 
 // Component
-@import 'components/_header.scss';
-@import 'components/_showcase.scss';
-@import 'components/_workshops.scss';
+@import 'components/_global';
+@import 'components/_header';
+@import 'components/_showcase';
+
+//Pages
+@import 'pages/_homepage';

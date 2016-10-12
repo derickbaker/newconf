@@ -1,5 +1,6 @@
 #showcase {
     height: 100vh;
+    position: relative;
 
     .showcaseVideo-wrapper {
         @include position(absolute, 0 null null 0);
@@ -10,15 +11,15 @@
             content: ' ';
             display: block;
             @include position(absolute, 0 0 0 0);
-            @include opacity(0.7);
-            @include background(url("../images/diagonalstripe.png"), center repeat transparent);
+            opacity: 0.7;
+            background: #000 url("../images/diagonalstripe.png") center repeat;
             background-size: 4px 4px;
             z-index:  $z-ten;
         }
     }
 
     .text {
-        @include position (absolute, null null 100px null);
+        @include position (absolute, null null 5% null);
         z-index: $z-two;
 
         h6 {
@@ -64,7 +65,7 @@
             display: block;
 
             b {
-                color: #3ea2e0;
+                color: $blue;
             }
         }
         .confDate {
