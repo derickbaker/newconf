@@ -100,7 +100,9 @@
             }
         }
 
-        &.affix {
+        
+}
+body.nav-sticky-active #navigation.affix {
             background-color: rgba(255,255,255,.9);
             box-shadow: 0 1px 3px rgba(0,0,0,.11);
             padding-top: 10px;
@@ -108,11 +110,11 @@
             @include transform(translateY(-100%));
             
             z-index: $z-three;
-        }
+}        
 
-        &.affix {
+body.nav-sticky-active.nav-sticky-open #navigation.affix {
             
-            @include transition(transform 0.5s cubic-bezier(0.23, 1, 0.32, 1));
+            transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
             @include transform(translateY(0));
 
             .navbar-brand {
@@ -137,7 +139,6 @@
                 }
             }
         }
-}
 
 #fullMenu {
     @include position(fixed, null -300px null null);
@@ -157,7 +158,7 @@
 
         svg {
             fill: #fff;
-            width: 240px;
+            width: 180px;
             margin-top: 30px;
 
             .\30 3d4419a-7fdb-4dc7-ad30-df1f4e955ccd,

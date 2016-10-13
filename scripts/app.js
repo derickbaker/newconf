@@ -76,11 +76,11 @@ $(document).ready(function() {
     });
 
     $('#navigation').affix({
-        offset: {top: $('header').height() + 70}
+        offset: {top: $('header').height() + 250}
     }).on('affix.bs.affix', function () {
-        $('body').addClass("nav-sticky");
+        $('body').addClass("nav-sticky-active nav-sticky-open");
     }).on('affix-top.bs.affix', function () {
-        $('body').removeClass("nav-sticky");
+        $('body').removeClass("nav-sticky-active nav-sticky-open");
     });
 
 });
