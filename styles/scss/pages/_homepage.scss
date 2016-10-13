@@ -1,7 +1,13 @@
 #about {
     padding: 80px 0;
 }
-
+#workshops {
+    padding: 80px 0;
+}
+#highlights {
+    padding: 80px 0;
+    background-color: darken( $blue, 43% );
+}
 #speakers {
     background-color: #f1f1f1;
     padding: 80px 0;
@@ -60,11 +66,11 @@
                 z-index: $z-ten;
             }
 
-            &:hover {
+            img {
+                filter: grayscale(100%);
+            }
 
-                img {
-                    filter: grayscale(100%);
-                }
+            &:hover {
 
                 &:before {
                     background-color: rgba( $blue, .4 );
@@ -75,7 +81,6 @@
         }
     }
 }
-
 #spex-cta {
     background-color: darken( $blue, 43% );
     color: $wht;

@@ -13,28 +13,28 @@ $(window).load(function() { // makes sure the whole site is loaded
     //});
     //wow.init();
 
-    var mySVGsToInject = document.querySelectorAll('img.swap');
+    //svg4everybody();
+
+    //var mySVGsToInject = document.querySelectorAll('img.svgSwap');
 
    // Trigger the injection
-    SVGInjector(mySVGsToInject, {
-      pngFallback: '../images/pngfallbacks'
-    });
+    //SVGInjector(mySVGsToInject, {
+      //pngFallback: '../images/pngfallbacks'
+    //});
 
 })
 
 $(document).ready(function() {
     $('.menu-link').bigSlide({
         menu: '#fullMenu',
-        side: 'right',
+        side: 'left',
         menuWidth: '18.750em',
         easyClose: 'true'
     });
 
-    $('.js-accordion-trigger').bind('click', function(e){
-      jQuery(this).parent().find('.submenu').slideToggle('fast'); 
-     // apply the toggle to the ul
-      jQuery(this).parent().toggleClass('is-expanded');
-      e.preventDefault();
+    $('.item-has-children').children('a').on('click', function(event){
+        event.preventDefault();
+        $(this).toggleClass('submenu-open').next('.submenu').slideToggle(200).end().parent('.item-has-children').siblings('.item-has-children').children('a').removeClass('submenu-open').next('.submenu').slideUp(200);
     });
 
     $('#navigation').affix({

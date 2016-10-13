@@ -19,7 +19,7 @@
     }
 
     .text {
-        @include position (absolute, null null 5% null);
+        @include position (absolute, null null 8% null);
         z-index: $z-two;
 
         h6 {
