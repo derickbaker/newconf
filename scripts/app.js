@@ -67,12 +67,13 @@ $(document).ready(function() {
         menuWidth: '18.750em',
         easyClose: 'true'
     });
-    //$('#navigation').affix({
-        //offset: {
-            //top: 350
-            //top: $('header').height()
-        //}
-    //});
+
+    $('.js-accordion-trigger').bind('click', function(e){
+      jQuery(this).parent().find('.submenu').slideToggle('fast'); 
+     // apply the toggle to the ul
+      jQuery(this).parent().toggleClass('is-expanded');
+      e.preventDefault();
+    });
 
     $('#navigation').affix({
         offset: {top: $('header').height() + 70}
@@ -81,7 +82,5 @@ $(document).ready(function() {
     }).on('affix-top.bs.affix', function () {
         $('body').removeClass("nav-sticky");
     });
-
-
 
 });

@@ -1,5 +1,6 @@
 // Base
 @import 'bourbon';
+@import 'neat';
 @import './node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
 
 //config
@@ -13,6 +14,7 @@
 @import 'components/_global';
 @import 'components/_header';
 @import 'components/_showcase';
+@import 'components/_workshops';
 
 //Pages
 @import 'pages/_homepage';

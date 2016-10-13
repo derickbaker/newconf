@@ -1,5 +1,5 @@
 //initialize all of our variables
-var concat, gulp, gutil, sass, sourceMaps, imagemin, autoprefixer, gulpSequence, bourbon;
+var concat, gulp, gutil, sass, sourceMaps, imagemin, autoprefixer, gulpSequence, bourbon, neat;
 
 var autoPrefixBrowserList = ['last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4']
 
@@ -12,6 +12,7 @@ imagemin        = require('gulp-imagemin');
 autoprefixer    = require('gulp-autoprefixer');
 gulpSequence    = require('gulp-sequence').use(gulp);
 bourbon         = require('bourbon').includePaths;
+neat            = require('bourbon-neat').includePaths;
 
 //compressing images & handle SVG files
 gulp.task('images', function(tmp) {
@@ -45,7 +46,7 @@ gulp.task('styles', function() {
         //include SCSS and list every "include" folder
         .pipe(sass({
             errLogToConsole: true,
-            includePaths: ['./styles/scss/'].concat(bourbon)
+            includePaths: ['./styles/scss/'].concat(bourbon).concat(neat)
         }))
         .pipe(autoprefixer({
             browsers: autoPrefixBrowserList,
