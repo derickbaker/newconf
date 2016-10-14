@@ -1,5 +1,4 @@
 body {
-    font-size: 16px;
     position: relative;
 }
 a {
@@ -8,8 +7,45 @@ a {
 
   &:hover {
     color: darken($blue,15%);
-    text-decoration: underline;
+    text-decoration: none;
   } 
+}
+.btn {
+    transition: all .3s ease-out;
+    background: $blue;
+    border-radius: 25px;
+    color: #fff;
+    font-family: $ff-roboto;
+    font-size: 16px;
+    font-weight: $fw-reg;
+    line-height: 1;
+    min-width: 180px;
+    padding: 13px 0px 14px 0px;
+    text-align: center;
+
+    &:hover,
+    &:focus {
+        color: $wht;
+        box-shadow: inset 0 -100px 0 rgba(41,41,41,0.15), 0 4px 6px 0 rgba(0,0,0,.1),0 1px 10px 0 rgba(0,0,0,.1),0 2px 4px -1px rgba(0,0,0,.1);
+        transition: 0.25s;
+    }
+    &.btn-white {
+        background: $wht;
+        color: #444;
+    }
+
+    &.btn-hollow {
+        background: none;
+        border: 2px solid $blue;
+        color: $blue;
+
+        &:hover,
+        &:focus {
+            background: $blue;
+            color: $wht;
+            transition: 0.25s;
+        }
+    }
 }
 .section-header {
     display: block;
@@ -64,4 +100,45 @@ a {
   .submenu-open {
     display: block;
   }
+}
+
+.image-with-text {
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+
+    .side-image {
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        padding: 0px;
+    }
+
+    .go-left {
+        left: 0px;
+    }
+
+    .background-image-holder {
+        height: 130%;
+        position: absolute;
+        top: -10%;
+        width: 100%;
+        background-size: cover !important;
+        background-position: 50% 50% !important;
+    }
+    h2 {
+        font-weight: $fw-light;
+        font-size: 34px;
+    }
+}
+.dark-wrapper {
+    background: rgb(245, 245, 245);
+}
+.preserve-3d {
+    transform-style: preserve-3d;
+}
+.vertical-align {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }

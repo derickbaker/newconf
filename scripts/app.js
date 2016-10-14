@@ -57,7 +57,7 @@ $(window).load(function() { // makes sure the whole site is loaded
 $(document).ready(function() {
     $('.menu-link').bigSlide({
         menu: '#fullMenu',
-        side: 'left',
+        side: 'right',
         menuWidth: '18.750em',
         easyClose: 'true'
     });
