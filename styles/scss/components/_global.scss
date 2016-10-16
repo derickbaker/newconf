@@ -10,7 +10,20 @@ a {
     text-decoration: none;
   } 
 }
-.btn {
+.text-link {
+    padding-bottom: 2px;
+    color: $blue;
+    border-bottom: 3px solid $blue;
+    font-weight: $fw-reg;
+
+    &:hover {
+        color: darken($blue,10%);
+        border-color: darken($blue,10%);
+    }
+}
+.btn,
+input[type="submit"], 
+button {
     transition: all .3s ease-out;
     background: $blue;
     border-radius: 25px;
@@ -45,6 +58,19 @@ a {
             color: $wht;
             transition: 0.25s;
         }
+    }
+}
+input[type="submit"] {
+    border:none;
+    font-weight: $fw-reg;
+}
+input[type="text"], 
+input[type="email"], 
+input[type="tel"] {
+    &:hover,
+    &:focus {
+        background: rgba(200,200,200,0.5);
+        outline: none;
     }
 }
 .section-header {
@@ -132,7 +158,19 @@ a {
     }
 }
 .dark-wrapper {
-    background: rgb(245, 245, 245);
+    background: rgb(241, 241, 241);
+}
+.primary-bg {
+    background: $blue;
+    transform-style: preserve-3d;
+    color: rgb(255, 255, 255);
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+
+    * {
+        color: $wht;
+    }
 }
 .preserve-3d {
     transform-style: preserve-3d;
@@ -141,4 +179,18 @@ a {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+}
+input[type="text"], 
+input[type="email"], 
+input[type="tel"] {
+    transition: all .3s ease-out;
+    background: rgba(200,200,200,0.3);
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 32px;
+    max-width: 90%;
+    padding: 12px;
+    padding-left: 24px;
 }

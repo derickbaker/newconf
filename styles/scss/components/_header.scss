@@ -15,8 +15,8 @@
         .navbar-nav > li > a {
             color:#fff;
             font-family: $ff-raleway;
-            font-size: 18px;
-            font-weight: 700;
+            font-size: 16px;
+            font-weight: 600;
             line-height: 50px;
             padding: 0;
 
@@ -40,12 +40,12 @@
             padding-right: 15px;
         }
         .navbar-nav.main > li > a {
-            margin-left: 70px;
+            margin-left: 40px;
         }
-        .navbar-nav.main > li > a.menu-link {
+        .navbar-nav.fullMenu > li > a.menu-link {
             float: left;
             margin-top: 0;
-            margin-left: 35px;
+            margin-left: 30px;
             color: #fff;
             text-decoration: none;
             font-size: 32px;
@@ -79,10 +79,10 @@
                 }
             }
         .navbar-nav.social {
-            margin-left: 70px;
+            margin-left: 15px;
 
             li > a {
-                margin-left: .5em;
+                margin-left: 1em;
             }
         }
         .navbar-nav > li.active a,
