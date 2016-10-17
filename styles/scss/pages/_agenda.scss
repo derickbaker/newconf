@@ -1,0 +1,36 @@
+body.agenda {
+	
+	#agendaTabs {
+		position: relative;
+		top: -55px;
+	}
+
+	#agendaTabs > li > a {
+		background: rgba(255,255,255,.8);
+		border-radius: 0;
+		color: #333;
+		font-size: 18px;
+		font-weight: $fw-reg;
+		min-width: 180px;
+		padding: 15px 30px;
+		text-align: center;
+		text-transform: uppercase;
+
+		&:hover {
+			color: $blue;
+		}
+	}
+	#agendaTabs > li.active > a {
+		background: $wht;
+		color: #333;
+	}
+	.listing {
+		border-bottom: 1px solid #d2d2d2;
+		padding: 1em 0;
+	}
+	.listing-title {
+		font-family: $ff-raleway;
+		margin-left: 7em;
+		margin-right: 1em;
+	}
+}

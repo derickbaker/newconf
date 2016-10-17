@@ -6101,6 +6101,60 @@ input[type="tel"] {
   padding: 12px;
   padding-left: 24px; }
 
+.pageHeader {
+  color: #fff;
+  overflow: hidden;
+  padding: 160px 0;
+  position: relative;
+  text-align: left; }
+  .pageHeader .backgroundImage {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover; }
+  .pageHeader h1 {
+    font-size: 42px;
+    font-weight: 300; }
+
+#sponsors {
+  overflow: hidden;
+  padding: 60px 0;
+  position: relative; }
+  #sponsors h1 {
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 30px; }
+  #sponsors .sponsor-column .sponsor {
+    height: 80px;
+    line-height: 80px;
+    margin-bottom: 36px; }
+  #sponsors img {
+    max-height: 80px;
+    max-width: 150px;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    height: auto; }
+
+#subscribe {
+  padding: 80px 0; }
+  #subscribe .icon {
+    font-size: 70px;
+    color: #2196F3;
+    display: inline-block;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 25px; }
+  #subscribe h1 {
+    margin-top: 0; }
+  #subscribe input {
+    margin: 0px auto;
+    max-width: 100%;
+    min-width: 100%; }
+
 #navigation {
   background-color: transparent;
   border: 0;
@@ -6362,12 +6416,14 @@ input[type="tel"] {
 #footer {
   background-color: #222328;
   padding: 60px 0; }
-  #footer ul li {
-    padding-right: 20px;
-    padding-left: 20px; }
-    #footer ul li:last-child {
-      padding-right: 0; }
-    #footer ul li a {
+  #footer ul {
+    margin-bottom: 0; }
+    #footer ul li {
+      padding-right: 20px;
+      padding-left: 20px; }
+      #footer ul li:last-child {
+        padding-right: 0; }
+    #footer ul a {
       color: #fff;
       font-family: "Raleway", "Helvetica Neue", "Helvetica", sans-serif;
       font-size: 12px;
@@ -6379,15 +6435,15 @@ input[type="tel"] {
       color: #eff0f4;
       margin: 0; }
 
-section {
+body.front section {
   padding: 80px 0; }
 
-#promo {
+body.front #promo {
   color: #fff;
   overflow: hidden;
   padding: 60px 0;
   position: relative; }
-  #promo .color-block {
+  body.front #promo .color-block {
     color: #fff;
     height: 100%;
     padding: 0px;
@@ -6395,19 +6451,19 @@ section {
     top: 0;
     -webkit-transition: all .3s ease-out;
     transition: all .3s ease-out; }
-    #promo .color-block.block-left {
+    body.front #promo .color-block.block-left {
       background-color: #0960a5; }
-    #promo .color-block.block-right {
+    body.front #promo .color-block.block-right {
       background-color: #064475;
       right: 0; }
-  #promo a {
+  body.front #promo a {
     color: #fff;
     pointer-events: auto; }
-    #promo a:hover .icon {
+    body.front #promo a:hover .icon {
       -webkit-transform: rotateZ(-10deg);
           -ms-transform: rotate(-10deg);
               transform: rotateZ(-10deg); }
-  #promo .icon {
+  body.front #promo .icon {
     background: #fff;
     border: 2px solid #fff;
     border-radius: 50%;
@@ -6420,41 +6476,41 @@ section {
     -webkit-transition: all .1s ease-out;
     transition: all .1s ease-out;
     width: 120px; }
-  #promo h1 {
+  body.front #promo h1 {
     font-size: 30px;
     line-height: 36px;
     margin: 0 0 10px 0;
     font-weight: 300; }
-  #promo .left .icon {
+  body.front #promo .left .icon {
     color: #0960a5; }
-  #promo .right .icon {
+  body.front #promo .right .icon {
     color: #064475; }
 
-#about {
+body.front #about {
   padding: 80px 0; }
-  #about h1 {
+  body.front #about h1 {
     font-weight: 300;
     margin-top: 0; }
 
-#workshops {
+body.front #workshops {
   padding: 80px 0; }
 
-#highlights {
+body.front #highlights {
   padding: 80px 0;
   background-color: #031f36; }
 
-#speakers .card {
+body.front #speakers .card {
   background-color: #fff;
   margin-bottom: 30px; }
-  #speakers .card h3 {
+  body.front #speakers .card h3 {
     color: #2196F3;
     font-weight: 300;
     letter-spacing: -1px;
     margin: 5px 0; }
-  #speakers .card .card-image {
+  body.front #speakers .card .card-image {
     display: block;
     position: relative; }
-    #speakers .card .card-image:before {
+    body.front #speakers .card .card-image:before {
       background-color: rgba(33, 150, 243, 0);
       content: '';
       display: block;
@@ -6466,63 +6522,46 @@ section {
       -webkit-transition: background-color 400ms ease;
       transition: background-color 400ms ease;
       z-index: 10; }
-    #speakers .card .card-image:hover img {
+    body.front #speakers .card .card-image:hover img {
       -webkit-filter: grayscale(0);
               filter: grayscale(0); }
 
-#spex-cta {
+body.front #spex-cta {
   background-color: #031f36;
   color: #fff;
   padding: 80px 0; }
-  #spex-cta h2 {
+  body.front #spex-cta h2 {
     font-family: "Raleway", "Helvetica Neue", "Helvetica", sans-serif;
     font-size: 42px;
     font-weight: 300;
     margin-bottom: 30px; }
-  #spex-cta .btn {
+  body.front #spex-cta .btn {
     padding-left: 30px;
     padding-right: 30px; }
-  #spex-cta .btn-white {
+  body.front #spex-cta .btn-white {
     margin-left: 15px; }
 
-#news h1 {
+body.front #news h1 {
   font-weight: 300;
   margin-top: 0;
   margin-bottom: 30px; }
 
-#news h3 {
+body.front #news h3 {
   font-size: 20px;
   font-weight: 300;
   margin-top: 10px; }
 
-#sponsors h1 {
-  font-weight: 300;
-  margin-top: 0;
-  margin-bottom: 30px; }
-
-#sponsors .sponsor-column .sponsor {
-  height: 80px;
-  line-height: 80px;
-  margin-bottom: 36px; }
-
-#sponsors img {
-  max-height: 80px;
-  max-width: 150px;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-  height: auto; }
-
-#map {
+body.front #map {
   height: 600px;
   position: relative;
   overflow: hidden; }
-  #map .map-holder {
+  body.front #map .map-holder {
     height: 100%;
     position: absolute;
     right: 0px;
     top: 0px;
     padding: 0px; }
-    #map .map-holder:before {
+    body.front #map .map-holder:before {
       content: "";
       height: 100%;
       left: 0px;
@@ -6530,7 +6569,7 @@ section {
       position: absolute;
       top: 0px;
       width: 100%; }
-    #map .map-holder iframe {
+    body.front #map .map-holder iframe {
       height: 100%;
       position: absolute;
       width: 100%;
@@ -6541,18 +6580,32 @@ section {
            -o-border-image: initial;
               border-image: initial; }
 
-#subscribe .icon {
-  font-size: 70px;
-  color: #2196F3;
-  display: inline-block;
-  margin-left: 25px;
-  margin-right: 25px;
-  margin-bottom: 25px; }
+body.agenda #agendaTabs {
+  position: relative;
+  top: -55px; }
 
-#subscribe h1 {
-  margin-top: 0; }
+body.agenda #agendaTabs > li > a {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 0;
+  color: #333;
+  font-size: 18px;
+  font-weight: 400;
+  min-width: 180px;
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase; }
+  body.agenda #agendaTabs > li > a:hover {
+    color: #2196F3; }
 
-#subscribe input {
-  margin: 0px auto;
-  max-width: 100%;
-  min-width: 100%; }
+body.agenda #agendaTabs > li.active > a {
+  background: #fff;
+  color: #333; }
+
+body.agenda .listing {
+  border-bottom: 1px solid #d2d2d2;
+  padding: 1em 0; }
+
+body.agenda .listing-title {
+  font-family: "Raleway", "Helvetica Neue", "Helvetica", sans-serif;
+  margin-left: 7em;
+  margin-right: 1em; }
