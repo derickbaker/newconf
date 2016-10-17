@@ -210,7 +210,7 @@ input[type="tel"] {
 
     h1 {
         font-size: 42px;
-        font-weight: $fw-light;
+        font-weight: $fw-thin;
     }
 }
 #sponsors {
@@ -218,7 +218,7 @@ input[type="tel"] {
     padding: 60px 0;
     position: relative;
 
-        h1 {
+        h2 {
             font-weight: $fw-light;
             margin-top: 0;
             margin-bottom: 30px;
@@ -248,7 +248,7 @@ input[type="tel"] {
             margin-right: 25px;
             margin-bottom: 25px;
         }
-        h1 {
+        h2 {
             margin-top: 0;
         }
         input {
