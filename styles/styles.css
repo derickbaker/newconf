@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,700|Raleway:300,700';
+@import 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,700|Raleway:300,700';
 @import url(../fonts/icomoon/style.css);
 html {
   -webkit-box-sizing: border-box;
@@ -6154,6 +6154,8 @@ input[type="tel"] {
     margin: 0px auto;
     max-width: 100%;
     min-width: 100%; }
+  #subscribe input[type="email"] {
+    color: #333; }
 
 #navigation {
   background-color: transparent;
@@ -6601,11 +6603,36 @@ body.agenda #agendaTabs > li.active > a {
   background: #fff;
   color: #333; }
 
+body.agenda .tab-content {
+  margin-bottom: 60px; }
+
 body.agenda .listing {
   border-bottom: 1px solid #d2d2d2;
   padding: 1em 0; }
+  body.agenda .listing .listing-title {
+    font-weight: 600;
+    font-family: "Raleway", "Helvetica Neue", "Helvetica", sans-serif;
+    margin-bottom: 0;
+    text-transform: uppercase; }
 
-body.agenda .listing-title {
+body.agenda .listing--break .listing-title {
+  letter-spacing: 0.15em;
+  text-transform: uppercase; }
+
+body.agenda .card-listing h3 {
+  margin-top: 0; }
+
+body.agenda .card-listing h6 {
+  font-size: 14px;
+  margin-bottom: 0;
+  text-transform: uppercase; }
+
+body.agenda .card-listing ul li p:first-child {
+  margin-bottom: 2px; }
+
+body.agenda .card-listing ul li h5 {
   font-family: "Raleway", "Helvetica Neue", "Helvetica", sans-serif;
-  margin-left: 7em;
-  margin-right: 1em; }
+  margin: 0 0 5px 0; }
+
+body.agenda .card-listing ul li h6 {
+  margin-top: 0; }

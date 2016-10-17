@@ -24,13 +24,48 @@ body.agenda {
 		background: $wht;
 		color: #333;
 	}
+	.tab-content {
+		margin-bottom: 60px;
+	}
 	.listing {
 		border-bottom: 1px solid #d2d2d2;
 		padding: 1em 0;
+	
+		.listing-title {
+	    	font-weight: 600;
+			font-family: $ff-raleway;
+			margin-bottom: 0;
+	    	text-transform: uppercase;
+		}
 	}
-	.listing-title {
-		font-family: $ff-raleway;
-		margin-left: 7em;
-		margin-right: 1em;
+	.listing--break {
+	
+		.listing-title {
+			letter-spacing: 0.15em;
+	    	text-transform: uppercase;
+		}
+	}
+	.card-listing {
+
+		h3 {
+			margin-top: 0;
+		}
+		h6 {
+			font-size: 14px;
+			margin-bottom: 0;
+			text-transform: uppercase;
+		}
+		ul li {
+			p:first-child {
+				margin-bottom: 2px;
+			}
+			h5 {
+				font-family: $ff-raleway;
+				margin: 0 0 5px 0;
+			}
+			h6 {
+				margin-top: 0;
+			}
+		}
 	}
 }
