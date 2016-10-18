@@ -80,6 +80,7 @@ gulp.task('styles-deploy', function() {
 
 gulp.task('default', ['scripts', 'styles'], function() {
     gulp.watch('./scripts/lib/*', ['scripts']);
+    gulp.watch('./styles/scss/*', ['styles']);
     gulp.watch('./styles/scss/**/*', ['styles']);
     gulp.watch('./images/**', ['images']);
 });
