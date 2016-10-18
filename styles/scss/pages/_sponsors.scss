@@ -1,0 +1,43 @@
+body.sponsors {
+    #sponsor-cta {
+        padding: 60px 0;
+        background-color: darken( $blue, 40% );
+        background-image: url('../images/elements_header_background.png');
+        color: $wht;
+
+        h2 {
+            font-family: $ff-raleway;
+            font-size: 42px;
+            font-weight: $fw-light;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    }
+    h2.section-title {
+        margin-top: 0;
+    }
+    #gold {
+        padding-top: 60px;
+    }
+    .sponsor-section {
+        margin-bottom: 40px;
+
+         .sponsor {
+            height: 80px;
+            line-height: 80px;
+            margin-bottom: 20px;
+        }
+
+        img {
+            max-height: 80px;
+            max-width: 150px;
+            transition: all 0.3s ease-out;
+            height: auto;
+        }
+    }
+   
+}

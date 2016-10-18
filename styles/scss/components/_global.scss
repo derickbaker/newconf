@@ -213,6 +213,62 @@ input[type="tel"] {
         font-weight: $fw-thin;
     }
 }
+#promo {
+        color: $wht;
+        overflow: hidden;
+        padding: 60px 0;
+        position: relative;
+
+        .color-block {
+            color: #fff;
+            height: 100%;
+            padding: 0px;
+            @include position(absolute, 0 null null null);
+            transition: all .3s ease-out;
+
+            &.block-left {
+                background-color: darken($blue, 20%);
+            }
+            &.block-right {
+                background-color: darken($blue,30%);
+                right: 0;
+            }
+        }
+
+        a {
+            color: #fff;
+            pointer-events: auto;
+
+            &:hover .icon {
+                transform: rotateZ(-10deg);
+            }
+        }
+        .icon {
+            background: $wht;
+            border: 2px solid $wht;
+            border-radius: 50%;
+            color: $blue;
+            display: inline-block;
+            font-size: 70px;
+            height: 120px;
+            line-height: 117px;
+            text-align: center;
+            transition: all .1s ease-out;
+            width: 120px;
+        }
+        h1 {
+            font-size: 30px;
+            line-height: 36px;
+            margin: 0 0 10px 0;
+            font-weight: $fw-light;
+        }
+        .left .icon {
+                color: darken($blue, 20%);
+            }
+        .right .icon {
+         color: darken($blue, 30%);
+        }
+    }
 #sponsors {
     overflow: hidden;
     padding: 60px 0;
@@ -223,13 +279,12 @@ input[type="tel"] {
             margin-top: 0;
             margin-bottom: 30px;
         }
-        .sponsor-column 
-            .sponsor {
+        .sponsor-column .sponsor {
                 height: 80px;
                 line-height: 80px;
                 margin-bottom: 36px;
-            }
-            img {
+        }
+        img {
                 max-height: 80px;
                 max-width: 150px;
                 transition: all 0.3s ease-out;
