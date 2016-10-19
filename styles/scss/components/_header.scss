@@ -1,24 +1,32 @@
 #navigation {
-        background-color: transparent;
+        background-color: rgba(255,255,255,0);
         border: 0;
         border-radius: 0;
         margin: 0;
-        padding-top: 30px;
         padding-right: 15px;
-        padding-bottom: 30px;
         padding-left: 15px;
-        @include position(absolute, null null null null);
-        @include transform(translateY(0));
+        @include position(fixed, null null null null);
+        transition: all 0.3s ease-out;
         width: 100%;
         z-index: $z-one;
+
+        .navbar-nav {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            transition: all 0.3s ease-out;
+        }
+        .navbar-nav.main {
+            padding-right: 15px;
+        }
 
         .navbar-nav > li > a {
             color:#fff;
             font-family: $ff-raleway;
-            font-size: 16px;
+            font-size: 18px;
             font-weight: 600;
             line-height: 50px;
-            padding: 0;
+
+            transition: all 0.3s ease-out;
 
             &:hover,
             &:focus {
@@ -35,12 +43,51 @@
 
             }
         }
-        .navbar-nav.main {
-            padding-top:0;
-            padding-right: 15px;
-        }
-        .navbar-nav.main > li > a {
+        
+        .navbar-nav.main > li {
             margin-left: 40px;
+        }
+        .navbar-nav.main > li > .dropdown-menu {
+            background-color: rgba(0,0,0,0.6);
+            border: 0;
+            border-radius: 0;
+            margin-top: 2px;
+            min-width: 220px;
+            text-align: right;
+
+            &:before {
+                content: ' ';
+                display: block;
+                position: absolute;
+                left: 0;
+                top: -2px;
+                right: 0;
+                height: 2px;
+                z-index: 5;
+                background-color: $blue;
+            }
+            
+            li > a {
+                border-top: 1px solid rgba(255,255,255,.1);
+                color: $wht;
+                font-size: 16px;
+                padding: 10px 20px;
+
+                &:hover {
+                    background-color: transparent;
+                    color: $blue;
+                }
+            }
+
+            li:first-child > a {
+                border-top: 0;
+            }
+        }
+        .navbar-nav.main > li.dropdown.open {
+            > a {
+                background-color: transparent !important;
+                color: $blue;
+            }
         }
         .navbar-nav.fullMenu > li > a.menu-link {
             float: left;
@@ -77,12 +124,15 @@
                     }
 
                 }
-            }
+        }
         .navbar-nav.social {
             margin-left: 15px;
 
+
             li > a {
                 margin-left: 1em;
+                padding-left: 0;
+                padding-right: 0;
             }
         }
         .navbar-nav > li.active a,
@@ -91,20 +141,21 @@
             background-color: transparent;
         }
         .navbar-brand {
-            height: 50px;
-            padding-top: 0;
-            padding-bottom: 0;
+            height: 120px;
+            display: block;
+            padding-top: 20px;
+            padding-bottom:20px;
+            transition: all 0.3s ease-out;
             
             .logo {
                 display: block;
+                width: 164px;
+                height: 80px;
+                background: url('../images/dugef_wht_conf-logo.svg') no-repeat center center;
+                background-size: 164px; 
 
-                &.blk,
-                &.conf {
-                    display: none;
-                }
             }
             
-
             svg {
                 height: 50px;
 
@@ -135,34 +186,50 @@
                 }
             }
         }
-
-        
-}
-.nav-sticky-active #navigation.affix {
-            background-color: rgba(255,255,255,.9);
+         &.affix  {
+            background-color: rgba(255,255,255,.95);
             box-shadow: 0 1px 3px rgba(0,0,0,.11);
-            padding-top: 15px;
-            padding-bottom: 15px;
             @include position(fixed, null null null null);
-            @include transform(translateY(-100%));
-            
             z-index: $z-three;
 
+            .navbar-nav {
+                padding-top: 0px;
+                padding-bottom: 0px;
+            }
+
+            .navbar-nav > li > a {
+                color: #333;
+
+                &:hover {
+                    color: $blue;
+                }
+            }
+            .navbar-nav.main > li > .dropdown-menu {
+                background-color: rgba(255,255,255,.95);
+
+                 li > a {
+                    border-top: 1px solid rgba(0,0,0,.2);
+                    color: $blk;
+
+                    &:hover {
+                        color: $blue;
+                    }
+                }
+                li:first-child > a {
+                    border: 0;
+                }
+            }
             .navbar-brand {
-                height: 50px;
+                height: 80px;
+                padding-top: 15px;
+                padding-top: 15px;
 
                 .logo {
-                    display: none;
-
-                    &.blk,
-                    &.conf {
-                        display: inline-block;
-                    }
-                    &.conf {
-                        margin-left:15px;
-                        border-left:1px dotted #999;
-                        padding-left: 15px;
-                    }
+                    display: block;
+                    width: 102px;
+                    height: 50px;
+                    background: url('../images/dugef_blk_conf-logo.svg') no-repeat center center;
+                    background-size: 102px; 
                 }
                 
                 svg {
@@ -173,11 +240,16 @@
                     }
                 }
             }
-}        
+
+            .navbar-nav.fullMenu > li > a.menu-link {
+                color: #333;
+            }
+        }
+}
+       
 
 .nav-sticky-active.nav-sticky-open #navigation.affix {           
-            transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
-            @include transform(translateY(0));
+
            
             .navbar-nav > li > a {
                 color: #333;

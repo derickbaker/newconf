@@ -143,6 +143,9 @@ input[type="tel"] {
     .go-left {
         left: 0px;
     }
+    .go-right {
+        right: 0px;
+    }
 
     .background-image-holder {
         height: 130%;
@@ -207,6 +210,7 @@ input[type="tel"] {
         width: 100%;
         height: 100%;
         background-size: cover;
+        background-position: 50% 50%;
 
         &:after {
             background-image:linear-gradient(90deg,rgba(0,0,0,.8) 0%,rgba(0,0,0,.2) 100%);

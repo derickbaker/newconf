@@ -14,7 +14,7 @@
 
     <link href="styles/animsition.css" rel="stylesheet">
     <link href="styles/styles.css" rel="stylesheet">
-
+    <script type="text/javascript" src="scripts/modernizr.custom.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -56,22 +56,16 @@
             <li><a href="#location">Location</a></li>
             <li><a href="#sponsors">Sponsors</a></li>
         </ul>
-        <!-- <ul class="list-unstyled">
-            <li><a href="#agenda">Agenda</a></li>
-            <li><a href="#speakers">Speakers</a></li>
-            <li><a href="#news">News</a></li>
-            <li><a href="#location">Location</a></li>
-            <li><a href="#sponsors">Sponsors</a></li>
-        </ul> -->
+        
     </div>
 </nav>
 <div id="page-wrapper" class="push">
   <header id="header">
-      <nav id="navigation" class="navbar navbar-default" data-spy="affix" data-offset="350">
+      <nav id="navigation" class="navbar navbar-default" data-spy="affix">
           <div class="container-fluid">
             <div class="navbar-header">
                 <a class="navbar-brand" href="index.html">
-                    <img src="images/dugef_wht_conf-logo.svg" height="50" class="logo" /><img src="images/dugef_blk_conf-logo.svg" height="50" class="logo blk" />
+                    <div class="logo"></div>
                 </a>
             </div>
             <div id="navbar">
@@ -87,12 +81,23 @@
                 <li><a href="agenda.html">Agenda</a></li>
                 <li><a href="speakers.html">Speakers</a></li>
                 <li><a href="location.html">Location</a></li>
-                <li><a href="sponsors.html">Sponsors</a></li>
+                <!-- <li><a href="sponsors.html">Sponsors</a></li> -->
+                <li class="dropdown">
+                    <a href="about.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">About DUG Eagle Ford</a></li>
+                        <li><a href="#">Why Attend</a></li>
+                        <li><a href="#">Photo Gallery</a></li>
+                        <li><a href="#">About DUG</a></li>
+                        <li><a href="#">DUG Video Gallery</a></li>
+                        <li><a href="#">BINGO</a></li>
+                      </ul>
+                </li>
                 <li><a href="news.html">News</a></li>
-            <!-- <li><a href="#tickets" class="registerButton">Register</a></li> -->
+
               </ul>
              
-            </div><!--/.nav-collapse -->
+            </div>
           </div>
         </nav>
        
@@ -164,7 +169,7 @@
                    
                         <p>This September, hear directly from <a href="#">20+ senior-level executives</a> and industry analysts in uniquely candid  <a href="#">conference sessions</a>. You'll meet and network with the region's top producers during the event's 9+ hours of dedicated networking sessions. Plus, hundreds of <a href="#">exhibiting companies</a> will showcase the latest products and technologies on the trade show floor.</p>
 
-                        <p><a href="#" class="btn btn-blue">Why attend?</a>&nbsp;&nbsp;<a href="#" class="btn btn-hollow">Register</a></p>
+                        <p><a href="#" class="btn btn-blue">Register today</a>&nbsp;&nbsp;&nbsp;<a href="#" class="btn btn-hollow">Why attend?</a></p>
                      
                 </div>
                 <div class="col-sm-6">
@@ -672,9 +677,9 @@
                                 </ul>
                                 </div>
                                 <div class="sitemapMenu">
-                                <h5>Sponsorships</h5>
+                                <h5>Sponsors</h5>
                                 <ul class="list-unstyled">
-                                    
+                                    <li><a href="sponsors.html">Our Sponsors</a></li>
                                     <li><a href="#">Event Sponors</a></li>
                                     <li><a href="#">Become a Sponsor</a></li>
                                     <li><a href="#">Sponsor Resources</a></li>

@@ -97,7 +97,7 @@ body.front {
                 z-index: 3;
                 @include position(absolute, 0 0 0 0);
                 background: $blueD45;
-                background: linear-gradient(45deg, $blueD45 0%, $blueD2 100%);
+                background: linear-gradient(45deg, $blue, $amber);
                 opacity: 0.5;
                 transition: opacity 0.5s ease-in-out;
             }
@@ -147,6 +147,10 @@ body.front {
             }
         }
         li.active {
+
+            .speaker-photo-wrap:before {
+                opacity: 0;
+            }
             .triangle {
                 border-color: transparent transparent $blue transparent;
             }
