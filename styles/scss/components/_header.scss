@@ -8,7 +8,7 @@
         @include position(fixed, null null null null);
         transition: all 0.3s ease-out;
         width: 100%;
-        z-index: $z-one;
+        z-index: $z-three;
 
         .navbar-nav {
             padding-top: 20px;
@@ -48,7 +48,7 @@
             margin-left: 40px;
         }
         .navbar-nav.main > li > .dropdown-menu {
-            background-color: rgba(0,0,0,0.6);
+            background-color: rgba(0,0,0,0.95);
             border: 0;
             border-radius: 0;
             margin-top: 2px;
@@ -96,15 +96,7 @@
             color: #fff;
             text-decoration: none;
             font-size: 32px;
-            //height: 50px;
-            //width: 50px;
-            //padding: 8px;
-            //border: 2px solid transparent;
-            //border-radius: 25px;
             z-index: $z-two;
-            //background: rgba(40,40,40,.6);
-            //line-height: 1;
-            //box-shadow: 0 0 0 1px rgba(255,255,255,0.1);
             cursor: pointer;
             touch-action: manipulation;
             vertical-align: top;

@@ -6236,7 +6236,7 @@ input[type="tel"] {
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
   width: 100%;
-  z-index: 100; }
+  z-index: 300; }
   #navigation .navbar-nav {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -6264,7 +6264,7 @@ input[type="tel"] {
   #navigation .navbar-nav.main > li {
     margin-left: 40px; }
   #navigation .navbar-nav.main > li > .dropdown-menu {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.95);
     border: 0;
     border-radius: 0;
     margin-top: 2px;
