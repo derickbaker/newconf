@@ -6,7 +6,7 @@
 // Fonts (Google Fonts, Font Squirrel, something else?)
 // The mixin for @font-face is in _mixins.scss! Check it out!
 $font-icomoon: 'icomoon';
-@import 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,700|Raleway:300,700';
+@import 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,700|Raleway:100,300,400,700';
 
 // Font Variables   
 $ff-roboto: 'Roboto', "Helvetica Neue", "Helvetica", sans-serif;
@@ -32,6 +32,7 @@ h1, h2, h3, h4, h5, h6 {
 h2.section-title {
 	font-weight:$fw-light;
 	margin-bottom: 30px;
+  margin-top: 0;
 }
 body {
 	font-family: $ff-roboto;

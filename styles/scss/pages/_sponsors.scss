@@ -1,8 +1,9 @@
 body.sponsors {
     #sponsor-cta {
         padding: 60px 0;
-        background-color: darken( $blue, 40% );
-        background-image: url('../images/elements_header_background.png');
+        //background-color: darken( $blue, 40% );
+        //background-image: url('../images/elements_header_background.png');
+        @include background(url("../images/elements_header_background.png"), linear-gradient(45deg,$blueD4, $blue), center no-repeat $blueD3 scroll);
         color: $wht;
 
         h2 {

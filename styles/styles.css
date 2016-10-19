@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,700|Raleway:300,700';
+@import 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,700|Raleway:100,300,400,700';
 @import url(../fonts/icomoon/style.css);
 html {
   -webkit-box-sizing: border-box;
@@ -5906,7 +5906,8 @@ h1, h2, h3, h4, h5, h6 {
 
 h2.section-title {
   font-weight: 300;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  margin-top: 0; }
 
 body {
   font-family: "Roboto", "Helvetica Neue", "Helvetica", sans-serif;
@@ -6102,6 +6103,7 @@ input[type="tel"] {
   padding-left: 24px; }
 
 .pageHeader {
+  background-color: #000;
   color: #fff;
   overflow: hidden;
   padding: 160px 0;
@@ -6116,9 +6118,24 @@ input[type="tel"] {
     width: 100%;
     height: 100%;
     background-size: cover; }
-  .pageHeader h1 {
-    font-size: 42px;
-    font-weight: 100; }
+    .pageHeader .backgroundImage:after {
+      background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.2)));
+      background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 100%);
+      background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 100%);
+      content: ' ';
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+  .pageHeader .text {
+    position: relative; }
+    .pageHeader .text h1 {
+      font-size: 60px;
+      font-weight: 100; }
 
 #promo {
   color: #fff;
@@ -6158,7 +6175,7 @@ input[type="tel"] {
     -webkit-transition: all .1s ease-out;
     transition: all .1s ease-out;
     width: 120px; }
-  #promo h1 {
+  #promo h2 {
     font-size: 30px;
     line-height: 36px;
     margin: 0 0 10px 0;
@@ -6188,7 +6205,7 @@ input[type="tel"] {
     height: auto; }
 
 #subscribe {
-  padding: 80px 0; }
+  padding: 60px 0; }
   #subscribe .icon {
     font-size: 70px;
     color: #2196F3;
@@ -6435,6 +6452,7 @@ input[type="tel"] {
         width: 100%; }
     #showcase .text h1 {
       color: #fff;
+      font-family: "Raleway", "Helvetica Neue", "Helvetica", sans-serif;
       font-size: 4em;
       font-weight: 300;
       line-height: 1.1;
@@ -6494,12 +6512,16 @@ input[type="tel"] {
     color: #fff;
     font-family: "Raleway", "Helvetica Neue", "Helvetica", sans-serif;
     letter-spacing: 0.15em;
-    margin: 0;
+    margin-top: 0;
     text-transform: uppercase; }
   #footer .sitemap .sitemapMenu {
-    margin-bottom: 30px; }
+    margin-bottom: 25px; }
+    #footer .sitemap .sitemapMenu.social li a {
+      font-size: 21px; }
+    #footer .sitemap .sitemapMenu.app img {
+      margin-bottom: 10px; }
   #footer .sitemap ul li {
-    margin-top: 5px; }
+    margin-bottom: 5px; }
   #footer .sitemap ul a {
     color: #ccc; }
 
@@ -6541,7 +6563,7 @@ body.front #promo {
     -webkit-transition: all .1s ease-out;
     transition: all .1s ease-out;
     width: 120px; }
-  body.front #promo h1 {
+  body.front #promo h2 {
     font-size: 30px;
     line-height: 36px;
     margin: 0 0 10px 0;
@@ -6587,9 +6609,9 @@ body.front #speaker-list {
       right: 0;
       bottom: 0;
       left: 0;
-      background: #dc4829;
-      background: -webkit-linear-gradient(45deg, #dc4829 0%, #885149 50%, #284f60 100%);
-      background: linear-gradient(45deg, #dc4829 0%, #885149 50%, #284f60 100%);
+      background: #021a2c;
+      background: -webkit-linear-gradient(45deg, #021a2c 0%, #0960a5 100%);
+      background: linear-gradient(45deg, #021a2c 0%, #0960a5 100%);
       opacity: 0.5;
       -webkit-transition: opacity 0.5s ease-in-out;
       transition: opacity 0.5s ease-in-out; }
@@ -6663,8 +6685,8 @@ body.front #speaker-list {
     margin: 25px 0;
     padding: 65px 30px 20px;
     background: #334550;
-    background: -webkit-linear-gradient(45deg, #334550 0%, #4a3d3f 50%, #64332d 100%);
-    background: linear-gradient(45deg, #334550 0%, #4a3d3f 50%, #64332d 100%);
+    background: -webkit-linear-gradient(45deg, #021a2c 0%, #2196F3 100%);
+    background: linear-gradient(45deg, #021a2c 0%, #2196F3 100%);
     color: #fff;
     text-align: left; }
     body.front #speaker-list .speaker-bio:before {
@@ -6741,9 +6763,9 @@ body.front #speakers .card {
               filter: grayscale(0); }
 
 body.front #spex-cta {
-  background-color: #042844;
-  background-image: url("../images/elements_header_background.png");
-  background-repeat: repeat;
+  background: url("../images/elements_header_background.png"), -webkit-linear-gradient(-315deg, #042844, #2196F3), center no-repeat #064475 scroll;
+  background: url("../images/elements_header_background.png"), -webkit-linear-gradient(45deg, #042844, #2196F3), center no-repeat #064475 scroll;
+  background: url("../images/elements_header_background.png"), linear-gradient(45deg, #042844, #2196F3), center no-repeat #064475 scroll;
   color: #fff;
   padding: 60px 0; }
   body.front #spex-cta h2 {
@@ -6755,7 +6777,16 @@ body.front #spex-cta {
     padding-left: 30px;
     padding-right: 30px; }
   body.front #spex-cta .btn-white {
+    color: #2196F3;
     margin-left: 15px; }
+  body.front #spex-cta .btn-hollow {
+    border-color: #fff;
+    color: #fff; }
+    body.front #spex-cta .btn-hollow:hover {
+      background-color: #fff;
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      color: #2196F3; }
 
 body.front #news {
   padding: 60px 0; }
@@ -6821,6 +6852,25 @@ body.agenda #agendaTabs > li.active > a {
 body.agenda .tab-content {
   margin-bottom: 60px; }
 
+body.agenda h2.section-title {
+  margin-top: 20px; }
+
+body.agenda .day.badge {
+  background-color: #2196F3;
+  border-radius: 3px;
+  color: #fff;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  padding: 10px 15px;
+  margin-right: 15px;
+  text-transform: uppercase; }
+
+body.agenda .dateTitle {
+  color: #666;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  text-transform: uppercase; }
+
 body.agenda .listing {
   border-bottom: 1px solid #d2d2d2;
   padding: 1em 0; }
@@ -6883,9 +6933,9 @@ body.speakers #speaker-list {
       right: 0;
       bottom: 0;
       left: 0;
-      background: #dc4829;
-      background: -webkit-linear-gradient(45deg, #dc4829 0%, #885149 50%, #284f60 100%);
-      background: linear-gradient(45deg, #dc4829 0%, #885149 50%, #284f60 100%);
+      background: #021a2c;
+      background: -webkit-linear-gradient(45deg, #021a2c 0%, #2196F3 100%);
+      background: linear-gradient(45deg, #021a2c 0%, #2196F3 100%);
       opacity: 0.5;
       -webkit-transition: opacity 0.5s ease-in-out;
       transition: opacity 0.5s ease-in-out; }
@@ -6933,6 +6983,8 @@ body.speakers #speaker-list {
         transition: -webkit-transform .25s;
         transition: transform .25s;
         transition: transform .25s, -webkit-transform .25s; }
+  body.speakers #speaker-list li.active .speaker-photo-wrap:before {
+    opacity: 0; }
   body.speakers #speaker-list li.active .triangle {
     border-color: transparent transparent #2196F3 transparent; }
   body.speakers #speaker-list li.active .toggle {
@@ -6958,9 +7010,9 @@ body.speakers #speaker-list {
     position: absolute;
     margin: 25px 0;
     padding: 65px 30px 20px;
-    background: #334550;
-    background: -webkit-linear-gradient(45deg, #334550 0%, #4a3d3f 50%, #64332d 100%);
-    background: linear-gradient(45deg, #334550 0%, #4a3d3f 50%, #64332d 100%);
+    background: #021a2c;
+    background: -webkit-linear-gradient(45deg, #021a2c 0%, #2196F3 100%);
+    background: linear-gradient(45deg, #021a2c 0%, #2196F3 100%);
     color: #fff;
     text-align: left; }
     body.speakers #speaker-list .speaker-bio:before {
@@ -7055,8 +7107,9 @@ body.location #hotels {
 
 body.sponsors #sponsor-cta {
   padding: 60px 0;
-  background-color: #042844;
-  background-image: url("../images/elements_header_background.png");
+  background: url("../images/elements_header_background.png"), -webkit-linear-gradient(-315deg, #042844, #2196F3), center no-repeat #064475 scroll;
+  background: url("../images/elements_header_background.png"), -webkit-linear-gradient(45deg, #042844, #2196F3), center no-repeat #064475 scroll;
+  background: url("../images/elements_header_background.png"), linear-gradient(45deg, #042844, #2196F3), center no-repeat #064475 scroll;
   color: #fff; }
   body.sponsors #sponsor-cta h2 {
     font-family: "Raleway", "Helvetica Neue", "Helvetica", sans-serif;

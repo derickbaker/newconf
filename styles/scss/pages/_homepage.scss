@@ -43,7 +43,7 @@ body.front {
             transition: all .1s ease-out;
             width: 120px;
         }
-        h1 {
+        h2 {
             font-size: 30px;
             line-height: 36px;
             margin: 0 0 10px 0;
@@ -96,8 +96,8 @@ body.front {
                 content: '';
                 z-index: 3;
                 @include position(absolute, 0 0 0 0);
-                background: #dc4829;
-                background: linear-gradient(45deg, #dc4829 0%, #885149 50%, #284f60 100%);
+                background: $blueD45;
+                background: linear-gradient(45deg, $blueD45 0%, $blueD2 100%);
                 opacity: 0.5;
                 transition: opacity 0.5s ease-in-out;
             }
@@ -176,7 +176,7 @@ body.front {
             margin: 25px 0;
             padding: 65px 30px 20px;
             background: #334550;
-            background: linear-gradient(45deg, #334550 0%, #4a3d3f 50%, #64332d 100%);
+            background: linear-gradient(45deg, $blueD45 0%, $blue 100%);
             color: #fff;
             text-align: left;
 
@@ -284,9 +284,10 @@ body.front {
         }
     }
     #spex-cta {
-        background-color: darken( $blue, 40% );
-        background-image: url('../images/elements_header_background.png');
-        background-repeat: repeat;
+        //background-color: $blue;
+        //background-image: url('../images/elements_header_background.png');
+        //background-repeat: repeat;
+        @include background(url("../images/elements_header_background.png"), linear-gradient(45deg,$blueD4, $blue), center no-repeat $blueD3 scroll);
         color: $wht;
         padding: 60px 0;
 
@@ -301,7 +302,18 @@ body.front {
             padding-right: 30px;
         }
         .btn-white {
+            color:$blue;
             margin-left: 15px;
+        }
+        .btn-hollow {
+            border-color: $wht;
+            color: $wht;
+
+            &:hover {
+                background-color:$wht;
+                box-shadow: none;
+                color: $blue;
+            }
         }
     }
 

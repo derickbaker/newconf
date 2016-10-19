@@ -13,6 +13,14 @@ $btn-grey-hover: #888888;
 
 $red: #F44336;
 $blue: #2196F3;
+$blue1: lighten($blue,10%);
+$blue2: lighten($blue,20%);
+$blue3: lighten($blue,30%);
+$blueD1: darken($blue,10%);
+$blueD2: darken($blue,20%);
+$blueD3: darken($blue,30%);
+$blueD4: darken($blue,40%);
+$blueD45: darken($blue,45%);
 $cyan: #00BCD4;
 
 $gray: #E6E7E9;

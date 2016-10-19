@@ -45,15 +45,22 @@
             color: $wht;
             font-family: $ff-raleway;
             letter-spacing: 0.15em;
-            margin: 0;
+            margin-top: 0;
             text-transform: uppercase;
         }
         .sitemapMenu{
-            margin-bottom: 30px;
+            margin-bottom: 25px;
+
+            &.social li a {
+                font-size: 21px;
+            }
+            &.app img {
+                margin-bottom: 10px;
+            }
         }
         ul {
             li {
-                margin-top: 5px;
+                margin-bottom: 5px;
             }
             a {
                 color: #ccc;
