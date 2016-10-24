@@ -143,8 +143,9 @@
                 display: block;
                 width: 164px;
                 height: 80px;
-                background: url('../images/dugef_wht_conf-logo.svg') no-repeat center center;
-                background-size: 164px; 
+                //background: url('../images/dugef_wht_conf-logo.svg') no-repeat center center;
+                @include retina('../images/dugef_wht_conf-logo.png', 4, 164px 80px, center center no-repeat);
+                //background-size: 164px; 
 
             }
             
@@ -220,8 +221,9 @@
                     display: block;
                     width: 102px;
                     height: 50px;
-                    background: url('../images/dugef_blk_conf-logo.svg') no-repeat center center;
-                    background-size: 102px; 
+                    @include retina('../images/dugef_blk_conf-logo.png', 4, 102px 50px, center center no-repeat);
+                    //background: url('../images/dugef_blk_conf-logo.svg') no-repeat center center;
+                    //background-size: 102px; 
                 }
                 
                 svg {

@@ -17,36 +17,36 @@ neat            = require('bourbon-neat').includePaths;
 //compressing images & handle SVG files
 gulp.task('images', function(tmp) {
     console.log(tmp);
-    gulp.src(['./images/*.jpg', './images/*.png'])
+    gulp.src(['images/*.jpg', 'images/*.png'])
         .pipe(imagemin({ optimizationLevel: 5, progressive: true, interlaced: true }));
 });
 
 //compressing images & handle SVG files
 gulp.task('images-deploy', function() {
-    gulp.src(['./images/*', '!../images/README'])
-        .pipe(gulp.dest('./images/prod'));
+    gulp.src(['images/*', '!../images/README'])
+        .pipe(gulp.dest('images/prod'));
 });
 
 //compiling our Javascripts
 gulp.task('scripts', function() {
     //this is where our dev JS scripts are
-    return gulp.src(['./scripts/lib/_includes/**/*.js', './scripts/lib/*.js'])
+    return gulp.src(['scripts/lib/*'])
         //this is the filename of the compressed version of our JS
         .pipe(concat('app.js'))
         //catch errors
         .on('error', gutil.log)
         //where we will store our finalized, compressed script
-        .pipe(gulp.dest('./scripts'));
+        .pipe(gulp.dest('scripts'));
 });
 
 //compiling our SCSS files
 gulp.task('styles', function() {
     //the initializer / master SCSS file, which will just be a file that imports everything
-    return gulp.src('./styles/scss/init.scss')
+    return gulp.src('styles/scss/init.scss')
         //include SCSS and list every "include" folder
         .pipe(sass({
             errLogToConsole: true,
-            includePaths: ['./styles/scss/'].concat(bourbon).concat(neat)
+            includePaths: ['styles/scss/'].concat(bourbon).concat(neat)
         }))
         .pipe(autoprefixer({
             browsers: autoPrefixBrowserList,
@@ -57,16 +57,16 @@ gulp.task('styles', function() {
         //the final filename of our combined css file
         .pipe(concat('styles.css'))
         //where to save our final, compressed css file
-        .pipe(gulp.dest('./styles'));
+        .pipe(gulp.dest('styles'));
 });
 
 //compiling our SCSS files for deployment
 gulp.task('styles-deploy', function() {
     //the initializer / master SCSS file, which will just be a file that imports everything
-    return gulp.src('./styles/scss/init.scss')
+    return gulp.src('styles/scss/init.scss')
         //include SCSS includes folder
         .pipe(sass({
-            includePaths: ['./styles/scss']
+            includePaths: ['styles/scss']
         }))
         .pipe(autoprefixer({
             browsers: autoPrefixBrowserList,
@@ -75,11 +75,11 @@ gulp.task('styles-deploy', function() {
         //the final filename of our combined css file
         .pipe(concat('styles.css'))
         //where to save our final, compressed css file
-        .pipe(gulp.dest('./styles'));
+        .pipe(gulp.dest('styles'));
 });
 
 gulp.task('default', ['scripts', 'styles'], function() {
-    gulp.watch('./scripts/lib/*', ['scripts']);
-    gulp.watch('./styles/scss/**/*', ['styles']);
-    gulp.watch('./images/**', ['images']);
+    gulp.watch('scripts/lib/*', ['scripts']);
+    gulp.watch('styles/scss/**/*', ['styles']);
+    gulp.watch('images/*', ['images']);
 });
