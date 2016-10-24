@@ -10,6 +10,9 @@
         width: 100%;
         z-index: $z-three;
 
+        .navbar-header {
+            float: left;
+        }
         .navbar-nav {
             padding-top: 20px;
             padding-bottom: 20px;
@@ -88,6 +91,11 @@
                 background-color: transparent !important;
                 color: $blue;
             }
+        }
+        .navbar-nav.fullMenu {
+            float: right;
+            margin-top: 0;
+            margin-bottom: 0;
         }
         .navbar-nav.fullMenu > li > a.menu-link {
             float: left;
@@ -303,7 +311,6 @@
 
             .icon {
                 float: right;
-                font-size: 18px;
             }
 
             &.submenu-open .icon {

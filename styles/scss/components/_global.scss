@@ -29,10 +29,10 @@ button {
     border-radius: 25px;
     color: #fff;
     font-family: $ff-roboto;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: $fw-reg;
     line-height: 1;
-    min-width: 180px;
+    min-width: 120px;
     padding: 13px 0px 14px 0px;
     text-align: center;
 
@@ -59,6 +59,12 @@ button {
             transition: 0.25s;
         }
     }
+     @media (min-width: $screen-sm-min) {
+        .btn {
+            font-size: 16px;
+            min-width: 180px;
+        }
+     }
 }
 input[type="submit"] {
     border:none;
@@ -253,15 +259,38 @@ input[type="tel"] {
                 background-color: darken($blue,30%);
                 right: 0;
             }
+             @media (max-width: $screen-sm-min) {
+                height: 50%;
+                width: 100%;
+
+                &.block-right {
+                    top: 50%;
+                }
+             }
         }
 
-        a {
+        .block-content {
             color: #fff;
             pointer-events: auto;
 
             &:hover .icon {
                 transform: rotateZ(-10deg);
             }
+
+            @media (max-width: $screen-sm-min) {
+                display: block;
+                margin-bottom: 120px;
+                overflow: hidden;
+
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+
+                .icon {
+                    margin-bottom: 30px;
+                }
+            }
+
         }
         .icon {
             background: $wht;
@@ -277,10 +306,15 @@ input[type="tel"] {
             width: 120px;
         }
         h2 {
-            font-size: 30px;
-            line-height: 36px;
+            font-size: 24px;
+            line-height: 30px;
             margin: 0 0 10px 0;
             font-weight: $fw-light;
+
+            @media (min-width: $screen-sm-min) {
+                font-size: 30px;
+                line-height: 36px;
+            }
         }
         .left .icon {
                 color: darken($blue, 20%);

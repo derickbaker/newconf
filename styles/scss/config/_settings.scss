@@ -2,6 +2,12 @@
 //
 // This is the FIRST Sass file imported by init.scss.
 
+
+// Breakpoints
+$screen-lg-min: 1200px;
+$screen-md-min: 992px;
+$screen-sm-min: 768px;
+
 // Z-Indexes
 $z-under: -1;
 $z-flat: 0;

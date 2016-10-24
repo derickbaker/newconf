@@ -64,7 +64,7 @@
         h1 {
             color: $wht;
             font-family: $ff-raleway;
-            font-size: 4em;
+            font-size: 2.5em;
             font-weight: $fw-light;
             line-height: 1.1;
             margin-bottom: 40px;
@@ -94,6 +94,13 @@
                 box-shadow: none;
                 color: $off-blk;
                 transition: 0.25s;
+            }
+        }
+
+        @media (min-width: $screen-sm-min) { 
+            h1 {
+                font-size: 4em;
+                margin-bottom: 40px;
             }
         }
     }

@@ -1,61 +1,6 @@
 body.front {
 
-    #promo {
-        color: $wht;
-        overflow: hidden;
-        padding: 60px 0;
-        position: relative;
-
-        .color-block {
-            color: #fff;
-            height: 100%;
-            padding: 0px;
-            @include position(absolute, 0 null null null);
-            transition: all .3s ease-out;
-
-            &.block-left {
-                background-color: darken($blue, 20%);
-            }
-            &.block-right {
-                background-color: darken($blue,30%);
-                right: 0;
-            }
-        }
-
-        a {
-            color: #fff;
-            pointer-events: auto;
-
-            &:hover .icon {
-                transform: rotateZ(-10deg);
-            }
-        }
-        .icon {
-            background: $wht;
-            border: 2px solid $wht;
-            border-radius: 50%;
-            color: $blue;
-            display: inline-block;
-            font-size: 70px;
-            height: 120px;
-            line-height: 117px;
-            text-align: center;
-            transition: all .1s ease-out;
-            width: 120px;
-        }
-        h2 {
-            font-size: 30px;
-            line-height: 36px;
-            margin: 0 0 10px 0;
-            font-weight: $fw-light;
-        }
-        .left .icon {
-                color: darken($blue, 20%);
-            }
-        .right .icon {
-         color: darken($blue, 30%);
-        }
-    }
+    
     #about {
         padding: 80px 0;
 
@@ -77,11 +22,15 @@ body.front {
             overflow: hidden;
             padding-left: 15px;
             padding-right: 15px;
-            width: 25%;
+            width: 100%;
 
             &:first-child,
             &:nth-child(4n+1) {
                 clear: left;
+            }
+
+            @media (min-width: $screen-sm-min) {
+                width: 25%;
             }
         }
         .speaker-photo-wrap {
