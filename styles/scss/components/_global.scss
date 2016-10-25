@@ -59,13 +59,14 @@ button {
             transition: 0.25s;
         }
     }
-     @media (min-width: $screen-sm-min) {
+    
+}
+ @media (min-width: $screen-sm-min) {
         .btn {
             font-size: 16px;
             min-width: 180px;
         }
      }
-}
 input[type="submit"] {
     border:none;
     font-weight: $fw-reg;

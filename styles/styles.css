@@ -6015,12 +6015,11 @@ button {
       color: #fff;
       -webkit-transition: 0.25s;
       transition: 0.25s; }
-  @media (min-width: 768px) {
-    .btn .btn,
-    input[type="submit"] .btn,
-    button .btn {
-      font-size: 16px;
-      min-width: 180px; } }
+
+@media (min-width: 768px) {
+  .btn {
+    font-size: 16px;
+    min-width: 180px; } }
 
 input[type="submit"] {
   border: none;
