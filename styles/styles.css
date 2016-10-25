@@ -5933,6 +5933,24 @@ p {
  * @param  {Value}  $size:   auto auto  The intended width of the rendered image.
  * @param  {Value}  $extras: null       Any other `background` values to be added.
  */
+.texture {
+  height: 5em;
+  width: 100%; }
+  .texture .texture-normal {
+    background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/diagonal-noise.png"), -webkit-gradient(linear, left top, left bottom, from(#e1f2f1), to(#bae0de)), center no-repeat #e1f2f1 scroll;
+    background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/diagonal-noise.png"), -webkit-linear-gradient(top, #e1f2f1, #bae0de), center no-repeat #e1f2f1 scroll;
+    background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/diagonal-noise.png"), linear-gradient(180deg, #e1f2f1, #bae0de), center no-repeat #e1f2f1 scroll;
+    float: left;
+    height: 5em;
+    width: 50%; }
+  .texture .texture-inverted {
+    background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/inverted/diagonal-noise.png"), -webkit-gradient(linear, left top, left bottom, from(#e1f2f1), to(#bae0de)), center no-repeat #e1f2f1 scroll;
+    background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/inverted/diagonal-noise.png"), -webkit-linear-gradient(top, #e1f2f1, #bae0de), center no-repeat #e1f2f1 scroll;
+    background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/inverted/diagonal-noise.png"), linear-gradient(180deg, #e1f2f1, #bae0de), center no-repeat #e1f2f1 scroll;
+    float: left;
+    height: 5em;
+    width: 50%; }
+
 body {
   position: relative; }
 
@@ -7189,6 +7207,10 @@ body.speakers #speaker-list {
   body.speakers #speaker-list .speaker-social li {
     font-size: 40px; }
 
+body.location .pageHeader.noImage {
+  background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/subtle_zebra_3d.png"), -webkit-linear-gradient(45deg, #021a2c, #2196F3), center no-repeat #021a2c scroll;
+  background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/subtle_zebra_3d.png"), linear-gradient(45deg, #021a2c, #2196F3), center no-repeat #021a2c scroll; }
+
 body.location #map {
   height: 600px;
   position: relative;
@@ -7196,9 +7218,10 @@ body.location #map {
   body.location #map .map-holder {
     height: 100%;
     position: absolute;
-    right: 0px;
-    top: 0px;
-    padding: 0px; }
+    top: 0;
+    right: 0;
+    padding: 0px;
+    width: 100%; }
     body.location #map .map-holder:before {
       content: "";
       height: 100%;
@@ -7219,8 +7242,7 @@ body.location #map {
               border-image: initial; }
 
 body.location #travelInfo {
-  margin-bottom: 30px;
-  padding-top: 30px; }
+  padding: 60px 0; }
   body.location #travelInfo h3 {
     font-weight: 300; }
   body.location #travelInfo .text-link {
@@ -7228,8 +7250,7 @@ body.location #travelInfo {
     margin-top: 15px; }
 
 body.location #hotels {
-  padding-top: 30px;
-  margin-bottom: 30px; }
+  padding: 60px 0; }
   body.location #hotels .info-box {
     overflow: hidden;
     position: relative; }
