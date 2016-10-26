@@ -48,14 +48,14 @@ body.location {
     #hotels {
         padding: 60px 0;
 
-        .info-box {
+        .hotel-info-box {
             overflow: hidden;
             position: relative;
         }
         h3 {
             font-weight: $fw-light;
         }
-        .info-link {
+        .hotel-info-link {
             @include position(absolute, null 0 12px null);
         }
     }

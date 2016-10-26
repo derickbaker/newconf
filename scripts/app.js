@@ -100,7 +100,7 @@ $(document).ready(function() {
     });
 
     $('#navigation').affix({
-        offset: {top: $('header').height() + 80}
+        offset: {top: $('header').height() + 120}
     }).on('affix.bs.affix', function () {
         $('body').addClass("nav-sticky-active nav-sticky-open");
     }).on('affix-top.bs.affix', function () {
