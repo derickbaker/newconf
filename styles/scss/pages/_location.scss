@@ -1,7 +1,5 @@
 body.location {
-    .pageHeader.noImage {
-        @include texture(45deg, $blueD45, $blue, 74, 1);
-    }
+    
     #map {
         height: 600px;
         position: relative;
