@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,700|Raleway:100,300,400,700';
+@import 'https://fonts.googleapis.com/css?family=Lato:100,300,400,700|Open+Sans:300,400,700';
 @import url(../fonts/icomoon/style.css);
 html {
   -webkit-box-sizing: border-box;
@@ -5898,7 +5898,7 @@ button.close {
   height: 100%; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Roboto", "Helvetica Neue", "Helvetica", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 700;
   line-height: 1.1;
   margin-bottom: 10px;
@@ -5910,16 +5910,12 @@ h2.section-title {
   margin-top: 0; }
 
 body {
-  font-family: "Roboto", "Helvetica Neue", "Helvetica", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 300; }
 
 p {
   font-size: 14px;
   line-height: 24px; }
-
-.lead {
-  font-family: "Roboto", "Helvetica Neue", "Helvetica", sans-serif;
-  font-weight: 300; }
 
 /**
  * Allows you to use retina images at various pixel densities.
@@ -5977,7 +5973,6 @@ button {
   background: #2196F3;
   border-radius: 25px;
   color: #fff;
-  font-family: "Roboto", "Helvetica Neue", "Helvetica", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 1;
@@ -6061,33 +6056,12 @@ input[type="tel"]:focus {
   margin-bottom: 10px; }
   .section-header .shsuperTitle {
     color: #2196F3;
-    font-family: "Roboto", "Helvetica Neue", "Helvetica", sans-serif;
     font-size: 24px;
     font-weight: 300;
     letter-spacing: -1px;
     line-height: 34px;
     padding-top: 3px;
     padding-bottom: 3px; }
-  .section-header .dash {
-    display: inline-block; }
-    .section-header .dash:after {
-      border-bottom: 3px solid #2196F3;
-      clear: both;
-      content: '';
-      display: block;
-      float: left;
-      margin-top: 5px;
-      margin-bottom: 8px;
-      width: 100%; }
-    .section-header .dash h1 {
-      font-family: "Roboto", "Helvetica Neue", "Helvetica", sans-serif;
-      font-size: 90px;
-      font-weight: 700;
-      letter-spacing: -4px;
-      line-height: 96px;
-      margin: 0;
-      padding-top: 2px;
-      padding-bottom: 2px; }
 
 .accordion > li > a {
   font-weight: normal; }
@@ -6445,8 +6419,7 @@ p.question {
     padding-right: 15px; }
   #navigation .navbar-nav > li > a {
     color: #fff;
-    font-family: "Raleway", "Helvetica Neue", "Helvetica", sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     line-height: 50px;
     -webkit-transition: all 0.3s ease-out;
@@ -6786,14 +6759,12 @@ p.question {
         width: 100%; }
     #showcase .text h1 {
       color: #fff;
-      font-family: "Raleway", "Helvetica Neue", "Helvetica", sans-serif;
       font-size: 2.5em;
       font-weight: 300;
       line-height: 1.1;
       margin-bottom: 40px; }
     #showcase .text h2 {
       color: #fff;
-      font-family: "Roboto", "Helvetica Neue", "Helvetica", sans-serif;
       font-size: 60px;
       font-weight: 700;
       letter-spacing: -1.5px;
@@ -6840,7 +6811,6 @@ p.question {
           padding-right: 0; }
       #footer .copyright ul a {
         color: #fff;
-        font-family: "Raleway", "Helvetica Neue", "Helvetica", sans-serif;
         font-size: 12px;
         text-transform: uppercase;
         letter-spacing: 0.1em; }
@@ -6848,7 +6818,6 @@ p.question {
       color: rgba(255, 255, 255, 0.3); }
   #footer .sitemap h5 {
     color: #fff;
-    font-family: "Raleway", "Helvetica Neue", "Helvetica", sans-serif;
     letter-spacing: 0.15em;
     margin-top: 0;
     text-transform: uppercase; }
@@ -7064,7 +7033,6 @@ body.front #spex-cta {
   color: #fff;
   padding: 60px 0; }
   body.front #spex-cta h2 {
-    font-family: "Raleway", "Helvetica Neue", "Helvetica", sans-serif;
     font-size: 42px;
     font-weight: 300;
     margin-bottom: 30px; }
@@ -7171,7 +7139,6 @@ body.agenda .listing {
   padding: 1em 0; }
   body.agenda .listing .listing-title {
     font-weight: 600;
-    font-family: "Raleway", "Helvetica Neue", "Helvetica", sans-serif;
     margin-bottom: 0;
     text-transform: uppercase; }
 
@@ -7192,7 +7159,6 @@ body.agenda .card-listing ul li p:first-child {
   margin-bottom: 2px; }
 
 body.agenda .card-listing ul li h5 {
-  font-family: "Raleway", "Helvetica Neue", "Helvetica", sans-serif;
   margin: 0 0 5px 0; }
 
 body.agenda .card-listing ul li h6 {
@@ -7406,7 +7372,6 @@ body.sponsors #sponsor-cta {
   background: url("../images/elements_header_background.png"), linear-gradient(45deg, #042844, #2196F3), center no-repeat #064475 scroll;
   color: #fff; }
   body.sponsors #sponsor-cta h2 {
-    font-family: "Raleway", "Helvetica Neue", "Helvetica", sans-serif;
     font-size: 42px;
     font-weight: 300;
     margin-bottom: 30px; }
