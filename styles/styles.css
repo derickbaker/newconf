@@ -6504,75 +6504,28 @@ p.question {
     padding-bottom: 20px;
     -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out; }
-    #navigation .navbar-brand .logo {
+    #navigation .navbar-brand #logo {
       display: block;
       width: 164px;
-      height: 80px;
-      /*
-   * Set a counter and get the length of the image path.
-   */
-      /*
-   * Loop ver the image path and figure out the
-   * position of the dot where the extension begins.
-   */
-      /*
-   * If we were able to figure out where the extension is,
-   * slice the path into a base and an extension. Use that to
-   * calculate urls for different density environments. Set
-   * values for different environments.
-   */
-      /*
-     * Set a base background for 1x environments.
-     */
-      background: url("../images/dugef_wht_conf-logo.png") center center no-repeat;
-      background-size: 164px 80px;
-      /*
-     * Create an @2x-ish media query.
-     */
-      /*
-     * Create media queries for all environments that the user has
-     * provided images for.
-     */
-      /*
-   * If anything went wrong trying to separate the file from its
-   * extension, set a background value without doing anything to it.
-   */ }
-      @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
-        #navigation .navbar-brand .logo {
-          background: url("../images/dugef_wht_conf-logo@2x.png") center center no-repeat;
-          background-size: 164px 80px; } }
-      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-        #navigation .navbar-brand .logo {
-          background: url("../images/dugef_wht_conf-logo@2x.png") center center no-repeat;
-          background-size: 164px 80px; } }
-      @media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi) {
-        #navigation .navbar-brand .logo {
-          background: url("../images/dugef_wht_conf-logo@3x.png") center center no-repeat;
-          background-size: 164px 80px; } }
-      @media (-webkit-min-device-pixel-ratio: 4), (min-resolution: 384dpi) {
-        #navigation .navbar-brand .logo {
-          background: url("../images/dugef_wht_conf-logo@4x.png") center center no-repeat;
-          background-size: 164px 80px; } }
-    #navigation .navbar-brand svg {
-      height: 50px; }
-      #navigation .navbar-brand svg .\36 3157878-2ef0-4800-965c-c7fc4a30e712 {
+      height: 80px; }
+      #navigation .navbar-brand #logo .\37 9c24bf5-ed32-4880-b608-64c69e0ce8dd {
         fill: #fff; }
-      #navigation .navbar-brand svg .\30 3d4419a-7fdb-4dc7-ad30-df1f4e955ccd,
-      #navigation .navbar-brand svg .\33 ce85440-e5a3-482c-8c51-03792b31ae54,
-      #navigation .navbar-brand svg .\35 154cc6d-9675-4d2c-91c2-ef1f60584d3b,
-      #navigation .navbar-brand svg .\37 16c9e6c-de01-42d7-8268-93869633b309,
-      #navigation .navbar-brand svg .\38 e93c8bd-90f3-45f6-92f5-03ba7ec3b051 {
+      #navigation .navbar-brand #logo .\37 2740b74-50a3-4eb6-9d2c-f3dbb9750cf3,
+      #navigation .navbar-brand #logo .bb1f9e01-af14-4b6d-8cc0-ad64d7419c45,
+      #navigation .navbar-brand #logo .d65952a4-2b2b-4638-a361-fee1df3fb3e2,
+      #navigation .navbar-brand #logo .e45290a7-3d8a-456d-96d8-61ffddcdfbe2,
+      #navigation .navbar-brand #logo .fc85bcc7-68f7-43b8-baa8-3eb910fff5c6 {
         fill-rule: evenodd; }
-      #navigation .navbar-brand svg .\30 3d4419a-7fdb-4dc7-ad30-df1f4e955ccd {
-        fill: url(#43c3fcc9-8f38-42f8-be63-420599a75c3a); }
-      #navigation .navbar-brand svg .\33 ce85440-e5a3-482c-8c51-03792b31ae54 {
-        fill: url(#0c88849b-8218-4651-bc6a-59561370e110); }
-      #navigation .navbar-brand svg .\35 154cc6d-9675-4d2c-91c2-ef1f60584d3b {
-        fill: url(#f9a9b2ed-74e6-43ca-9656-61c164c51bcb); }
-      #navigation .navbar-brand svg .\38 e93c8bd-90f3-45f6-92f5-03ba7ec3b051 {
-        fill: url(#a977ce24-3b0f-4736-a113-b00623b461ee); }
-      #navigation .navbar-brand svg .\37 16c9e6c-de01-42d7-8268-93869633b309 {
-        fill: url(#996db6d7-e272-4686-a53b-10aa01abb202); }
+      #navigation .navbar-brand #logo .bb1f9e01-af14-4b6d-8cc0-ad64d7419c45 {
+        fill: url(#d6bdcfa0-c09b-4055-82ce-d70d27b89ebe); }
+      #navigation .navbar-brand #logo .\37 2740b74-50a3-4eb6-9d2c-f3dbb9750cf3 {
+        fill: url(#bdf8709d-75c4-4259-be63-a92ac09c577f); }
+      #navigation .navbar-brand #logo .e45290a7-3d8a-456d-96d8-61ffddcdfbe2 {
+        fill: url(#88e82b32-bbe1-4979-b9b5-074137970b88); }
+      #navigation .navbar-brand #logo .fc85bcc7-68f7-43b8-baa8-3eb910fff5c6 {
+        fill: url(#e3d89d3b-acd5-48ae-b07f-b1774e7c0218); }
+      #navigation .navbar-brand #logo .d65952a4-2b2b-4638-a361-fee1df3fb3e2 {
+        fill: url(#9cb3507d-afc4-4422-8211-5acf9fe4b29d); }
   #navigation.affix {
     background-color: rgba(255, 255, 255, 0.95);
     -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.11);
@@ -6599,58 +6552,11 @@ p.question {
       height: 80px;
       padding-top: 15px;
       padding-top: 15px; }
-      #navigation.affix .navbar-brand .logo {
+      #navigation.affix .navbar-brand #logo {
         display: block;
         width: 102px;
-        height: 50px;
-        /*
-   * Set a counter and get the length of the image path.
-   */
-        /*
-   * Loop ver the image path and figure out the
-   * position of the dot where the extension begins.
-   */
-        /*
-   * If we were able to figure out where the extension is,
-   * slice the path into a base and an extension. Use that to
-   * calculate urls for different density environments. Set
-   * values for different environments.
-   */
-        /*
-     * Set a base background for 1x environments.
-     */
-        background: url("../images/dugef_blk_conf-logo.png") center center no-repeat;
-        background-size: 102px 50px;
-        /*
-     * Create an @2x-ish media query.
-     */
-        /*
-     * Create media queries for all environments that the user has
-     * provided images for.
-     */
-        /*
-   * If anything went wrong trying to separate the file from its
-   * extension, set a background value without doing anything to it.
-   */ }
-        @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
-          #navigation.affix .navbar-brand .logo {
-            background: url("../images/dugef_blk_conf-logo@2x.png") center center no-repeat;
-            background-size: 102px 50px; } }
-        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-          #navigation.affix .navbar-brand .logo {
-            background: url("../images/dugef_blk_conf-logo@2x.png") center center no-repeat;
-            background-size: 102px 50px; } }
-        @media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi) {
-          #navigation.affix .navbar-brand .logo {
-            background: url("../images/dugef_blk_conf-logo@3x.png") center center no-repeat;
-            background-size: 102px 50px; } }
-        @media (-webkit-min-device-pixel-ratio: 4), (min-resolution: 384dpi) {
-          #navigation.affix .navbar-brand .logo {
-            background: url("../images/dugef_blk_conf-logo@4x.png") center center no-repeat;
-            background-size: 102px 50px; } }
-      #navigation.affix .navbar-brand svg {
         height: 50px; }
-        #navigation.affix .navbar-brand svg .\36 3157878-2ef0-4800-965c-c7fc4a30e712 {
+        #navigation.affix .navbar-brand #logo .\37 9c24bf5-ed32-4880-b608-64c69e0ce8dd {
           fill: #000; }
     #navigation.affix .navbar-nav.fullMenu > li > a.menu-link {
       color: #333; }
@@ -6689,11 +6595,13 @@ p.question {
     #fullMenu .accordion > li > a.js-accordion-trigger {
       position: relative; }
       #fullMenu .accordion > li > a.js-accordion-trigger .icon {
-        float: right; }
+        float: right;
+        -webkit-transition: .25s all ease;
+        transition: .25s all ease; }
       #fullMenu .accordion > li > a.js-accordion-trigger.submenu-open .icon {
-        -webkit-transform: rotate(90deg);
-            -ms-transform: rotate(90deg);
-                transform: rotate(90deg); }
+        -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+                transform: rotate(45deg); }
   #fullMenu .accordion .submenu {
     padding-left: 20px; }
     #fullMenu .accordion .submenu > li > a {

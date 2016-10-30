@@ -12,6 +12,8 @@
 
         .navbar-header {
             float: left;
+
+
         }
         .navbar-nav {
             padding-top: 20px;
@@ -146,45 +148,30 @@
             padding-bottom:20px;
             transition: all 0.3s ease-out;
             
-            .logo {
+            #logo {
                 display: block;
                 width: 164px;
                 height: 80px;
                 //background: url('../images/dugef_wht_conf-logo.svg') no-repeat center center;
-                @include retina('../images/dugef_wht_conf-logo.png', 4, 164px 80px, center center no-repeat);
-                //background-size: 164px; 
+                //@include retina('../images/dugef_wht_conf-logo.png', 4, 164px 80px, center center no-repeat);
+                //background-size: 164px;
+
+                .\37 9c24bf5-ed32-4880-b608-64c69e0ce8dd {
+                    fill:#fff
+                }
+                .\37 2740b74-50a3-4eb6-9d2c-f3dbb9750cf3,
+                .bb1f9e01-af14-4b6d-8cc0-ad64d7419c45,
+                .d65952a4-2b2b-4638-a361-fee1df3fb3e2,
+                .e45290a7-3d8a-456d-96d8-61ffddcdfbe2,
+                .fc85bcc7-68f7-43b8-baa8-3eb910fff5c6{fill-rule:evenodd}
+                .bb1f9e01-af14-4b6d-8cc0-ad64d7419c45{fill:url(#d6bdcfa0-c09b-4055-82ce-d70d27b89ebe)}
+                .\37 2740b74-50a3-4eb6-9d2c-f3dbb9750cf3{fill:url(#bdf8709d-75c4-4259-be63-a92ac09c577f)}
+                .e45290a7-3d8a-456d-96d8-61ffddcdfbe2{fill:url(#88e82b32-bbe1-4979-b9b5-074137970b88)}
+                .fc85bcc7-68f7-43b8-baa8-3eb910fff5c6{fill:url(#e3d89d3b-acd5-48ae-b07f-b1774e7c0218)}
+                .d65952a4-2b2b-4638-a361-fee1df3fb3e2{fill:url(#9cb3507d-afc4-4422-8211-5acf9fe4b29d)} 
 
             }
             
-            svg {
-                height: 50px;
-
-                .\36 3157878-2ef0-4800-965c-c7fc4a30e712 {
-                    fill:#fff
-                }
-                .\30 3d4419a-7fdb-4dc7-ad30-df1f4e955ccd,
-                .\33 ce85440-e5a3-482c-8c51-03792b31ae54,
-                .\35 154cc6d-9675-4d2c-91c2-ef1f60584d3b,
-                .\37 16c9e6c-de01-42d7-8268-93869633b309,
-                .\38 e93c8bd-90f3-45f6-92f5-03ba7ec3b051 {
-                    fill-rule:evenodd
-                }
-                .\30 3d4419a-7fdb-4dc7-ad30-df1f4e955ccd {
-                    fill:url(#43c3fcc9-8f38-42f8-be63-420599a75c3a)
-                }
-                .\33 ce85440-e5a3-482c-8c51-03792b31ae54{
-                    fill:url(#0c88849b-8218-4651-bc6a-59561370e110)
-                }
-                .\35 154cc6d-9675-4d2c-91c2-ef1f60584d3b{
-                    fill:url(#f9a9b2ed-74e6-43ca-9656-61c164c51bcb)
-                }
-                .\38 e93c8bd-90f3-45f6-92f5-03ba7ec3b051{
-                    fill:url(#a977ce24-3b0f-4736-a113-b00623b461ee)
-                }
-                .\37 16c9e6c-de01-42d7-8268-93869633b309{
-                    fill:url(#996db6d7-e272-4686-a53b-10aa01abb202)
-                }
-            }
         }
          &.affix  {
             background-color: rgba(255,255,255,.95);
@@ -224,22 +211,20 @@
                 padding-top: 15px;
                 padding-top: 15px;
 
-                .logo {
+                #logo {
                     display: block;
                     width: 102px;
                     height: 50px;
-                    @include retina('../images/dugef_blk_conf-logo.png', 4, 102px 50px, center center no-repeat);
+                    //@include retina('../images/dugef_blk_conf-logo.png', 4, 102px 50px, center center no-repeat);
                     //background: url('../images/dugef_blk_conf-logo.svg') no-repeat center center;
                     //background-size: 102px; 
-                }
-                
-                svg {
-                    height: 50px;
-                    
-                    .\36 3157878-2ef0-4800-965c-c7fc4a30e712 {
+
+                    .\37 9c24bf5-ed32-4880-b608-64c69e0ce8dd {
                         fill:#000;
                     }
                 }
+                
+                
             }
 
             .navbar-nav.fullMenu > li > a.menu-link {
@@ -310,10 +295,12 @@
 
             .icon {
                 float: right;
+                transition: .25s all ease;
             }
 
             &.submenu-open .icon {
-                transform: rotate(90deg);
+                transform: rotate(45deg);
+
             }
         }
     }
