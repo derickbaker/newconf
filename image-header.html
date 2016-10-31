@@ -10,13 +10,11 @@
     <meta name="author" content="">
     
 
-    <title>Location | Conference</title>
+    <title>Image Header | Conference</title>
 
     <link href="styles/animsition.css" rel="stylesheet">
     <link href="styles/styles.css" rel="stylesheet">
-
-
-
+    <script type="text/javascript" src="scripts/modernizr.custom.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -26,7 +24,7 @@
 
   </head>
 
-  <body class="location">
+  <body class="front">
 <div class="animsition">
 <nav id="fullMenu" class="fullMenu-panel" role="navigation">
    
@@ -132,6 +130,14 @@
                     <li><a href="#"><span class="icon icon-instagram"></span></a></li>
                 </ul>
               <ul class="nav main navbar-nav navbar-right hidden-xs">
+                <li class="dropdown">
+                    <a href="about.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="icon icon-arrow-down4"></span> Home</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html">Video Header</a></li>
+                        <li><a href="image-header.html">Image Header</a></li>
+                        <li><a href="hero-slider.html">Hero Slider</a></li>
+                      </ul>
+                </li>
                 <li><a href="agenda.html">Agenda</a></li>
                 <li><a href="speakers.html">Speakers</a></li>
                 <li><a href="location.html">Location</a></li>
@@ -157,140 +163,382 @@
        
   </header>
 
-    <section class="pageHeader noImage">
-        <!-- <div class="backgroundImage" style="background-image:url(images/location-page-header.jpg);"></div> -->
+    <section id="showcase" class="static-image">
+        
+        <div class="background" style="background-image:url(images/video-fallback.jpg);" ></div>
         <div class="container">
             <div class="row">
-                <div class="text col-md-6">
-                    <h1>Conference Location</h1>
-                    <p class="lead">Over the past two years, this event has experience phenomenal growth — <strong>almost 60% growth in the exhibition</strong> and <strong>25% growth in attendance</strong>. In an effort to sustain this growth trend, the event has relocated to the <a href="#">Cox Convention Center</a> in the state’s capital – <strong>Oklahoma City</strong> – in 2015.</p>
+                <div class="text col-md-8 col-sm-10">
+                    <!-- <p><img src="images/conf-logo@2x.png" height="200" /></p> -->
+                    <p class="lead">September 12th to 14th - San Antonio, Texas</p>
+                    <h1>At A Crossroads Looking Toward Tomorrow</h1>
+                    <p><a href="#" class="btn btn-register" target="_self">Register Now</a><a href="#" id="leanMoreButton" class="btn btn-hollow btn-white" target="_self">Learn More</a></p>
                 </div>
             </div>
       </div>
     </section><!-- / #hero -->
-
-
-
-    <section id="travelInfo">
-      <div class="container">
-      <h2 class="section-title">Travel Information</h2>
-      <div class="row">
-        <div class="col-sm-4">
-            <div class="travel-info-box">
-                <img src="images/air.jpg" class="img-responsive" />
-                <h3>Explore Oklahoma City</h3>
-                <p>Take advantage of all Oklahoma City has to offer! Whether you are looking for simple western charm or a busy metropolitan experience, Oklahoma City is the place to be. The city is filled with heritage and culture, boasting many local attractions, sporting events, restaurants and nightlife.</p>
-                <p><strong>City Links:</strong></p>
-                <ul class="list-unstyled">
-                        <li><a href="#">Visit Oklahoma City</a></li>
-                        <li><a href="#">Oklahoma City Chamber of Commerce</a></li>
-                        <li><a href="#">OKC.gov</a></li>
-                        <li><a href="#">City Data</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-sm-4">
-            <div class="travel-info-box">
-                <img src="images/air.jpg" class="img-responsive" />
-                <h3>United Airlines</h3>
-                <p>Book your reservations on <a href="#">www.united.com</a>. Choose your flight times and access your meeting discounts by entering code <strong>ZW4S237806</strong> in the "Offer Code" box.</p>
-                <p>If booking through a travel professional or United Meetings at 800-426-1122, please provide the following information:</p>
-                <ul>
-                    <li>Agreement Code: <strong>237806</strong></li>
-                    <li>Z Code: <strong>ZW4S</strong></li>
-                </ul>
-                <a href="#" class="text-link">Book Flight</a>
-            </div>
-        </div>
-        <div class="col-sm-4">
-            <div class="travel-info-box">
-                <img src="images/car.jpg" class="img-responsive" />
-                <h3>Hertz Car Rental</h3>
-                <p>Hertz Car Rental is offering special discounts, including unlimited vehicle mileage, for DUG Midcontinent conference attendees.</p><p>Book your reservations on <a href="#">www.hertz.com</a>. Access your discount by entering code <strong>022Q7326</strong> in the "Convention Number" box. Advance reservations are recommended, as cars are subject to availability.</p>
-                <a href="#" class="text-link">Reserve Car</a>
-            </div>
-        </div>
-      </div>    
-      </div>
-  </section>
-  <section id="hotels">
-      <div class="container">
-      <h2 class="section-title">Nearby Accomodations</h2>
-      <div class="row">
-        <div class="col-sm-4">
-            <div class="hotel-info-box">
-                <img src="images/hotel1.jpg" class="img-responsive" />
-                <h3>Renaissance Oklahoma City Convention Center Hotel</h3>
-                <p>10 North Broadway Ave.<br>
-    Oklahoma City, OK 73102</p>
-                <div class="hotel-info-link"><a href="#" class="text-link">Reserve Room</a></div>
-            </div>
-        </div>
-        <div class="col-sm-4">
-            <div class="hotel-info-box">
-                <img src="images/hotel2.jpg" class="img-responsive" />
-                <h3>Hilton Skirvin Oklahoma City</h3>
-                <p>1 Park Ave<br>
-Oklahoma City, OK 73102</p>
-                <div class="hotel-info-link"><a href="#" class="text-link">Reserve Room</a></div>
-            </div>
-        </div>
-      </div>    
-      </div>
-  </section>
-     <section id="map">
-        <div class="container-fluid">
+    <section id="promo">
+        <div class="color-block block-left col-md-6 col-sm-12"></div>
+        <div class="color-block block-right col-md-6 col-sm-12"></div>
+        <div class="container">
             <div class="row">
-                <div class="map-holder ">
 
-                    <iframe
-                      width="600"
-                      height="450"
-                      frameborder="0" style="border:0;pointer-events: none;"
-                      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyATYMPvduoUNgtQnO2-hwhFiKsBLFwbFEo
-                        &q=Henry+B.+Gonzalez+Convention+Center&attribution_source=Google+Maps+Embed+API&attribution_web_url=http://www.dugeagleford.com&attribution_ios_deep_link_id=comgooglemaps://?daddr=Henry+B.+Gonzalez+Convention+Center" allowfullscreen>
-                    </iframe>
+              
+                    <a href="#" class="block-content">
+                        <div class="col-md-2 col-sm-4 text-center">
+                            <span class="icon icon-cash-dollar"></span>
+                        </div>
+                    
+                        <div class="col-md-4 col-sm-8">
+                            <h2>Purchase an early bird ticket and save!</h2>
+                            <p>Catch our Early Bird special and save 20% off your ticket, be quick before they sell out!</p>
+
+                        </div>
+                    </a>
+           
+                    <a href="" class="block-content">
+                        <div class="col-md-2 col-sm-4 text-center">
+                            <i class="icon icon-smartphone"></i>
+                        </div>
+                    
+                        <div class="col-md-4 col-sm-8">
+                            <h2>Download the conference app and stay informed!</h2>
+                            <p>Available on iOS and Android, the conference app includes directions, schedule info and more!</p>
+
+                        </div>
+                    </a>
+              
+            </div>
+        </div>
+    </section>
+     <section id="about">
+        <div class="container">
+            
+                       
+            <div class="row">
+                
+                <div class="col-sm-6">
+                <h1>Looking Toward Tomorrow</h1>
+                    <p class="lead">As signs of a market recovery take hold, industry leaders' questions are shifting from "how low will it go, and how long?" to "how much will it recover, and how quickly?" Texas' prolific Permian Basin is already experiencing a surge in activity.</p>
+                   
+                        <p>This September, hear directly from <a href="#">20+ senior-level executives</a> and industry analysts in uniquely candid  <a href="#">conference sessions</a>. You'll meet and network with the region's top producers during the event's 9+ hours of dedicated networking sessions. Plus, hundreds of <a href="#">exhibiting companies</a> will showcase the latest products and technologies on the trade show floor.</p>
+
+                        <p><a href="#" class="btn btn-blue">Register today</a>&nbsp;&nbsp;&nbsp;<a href="#" class="btn btn-hollow">Why attend?</a></p>
+                     
+                </div>
+                <div class="col-sm-6">
+                        
+                        <div style="display: block; position: relative; max-width: 100%;"><div style="padding-top: 56.25%;"><iframe src="//players.brightcove.net/50530328001/4yNJbMctl_default/index.html?videoId=5165607136001" 
+                        allowfullscreen 
+                        webkitallowfullscreen 
+                        mozallowfullscreen 
+                        style="width: 100%; height: 100%; position: absolute; top: 0px; bottom: 0px; right: 0px; left: 0px;border:0;"></iframe></div></div>
+                      
+                    
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="image-with-text dark-wrapper">
+        
+                <div class="go-left side-image col-sm-4 col-md-6">
+                    <div class="background-image-holder" style="background: url('https://industryvoice.com/images/events-bg.jpg') 50% 0%;">
+                        <img class="background-image" alt="Background Image" src="https://industryvoice.com/images/events-bg.jpg" style="display: none;">
+                    </div>
+                </div>
+         
+        <div class="container vertical-align">
+            <div class="row">
+                <div class="col-md-5 col-md-offset-7 col-sm-7 col-sm-offset-5">
+                    <h2>MIDSTREAM Texas event co-Located with DUG Eagle Ford</h2>
+                    <p class="lead">Hart Energy's MIDSTREAM Texas conference and exhibition explores midstream activity across the Lone Star State and beyond.</p> 
+                    <p>Get the latest updates from over 20 of the industry's most sought-after leaders, network with hundreds of upstream, midstream and downstream executives and explore the latest products and technologies from over top exhibitors. Walk away with new insights, proven best practices and contacts you can't make at other events.</p>
+
+                    <p>Visit <a href="#">MidstreamTexas.com</a> to learn more and register!</p>
+                </div>
+            </div>
+        </div>
+            
+    </section>
+   
+
+    <section id="spex-cta">
+        <div class="container text-center">
+            
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <h2>Are you interested in Exhibitor &amp; Sponsorship Opportunities?</h2>
+                    <p class="lead">The DUG Eagle Ford exhibition hall is the perfect place to promote your brand. With the new co-located MIDSTREAM Texas conference, the shared exhibition hall is selling out quickly.</p>
+                    <p><a href="#" class="btn btn-white">Exhibitor Opportunities</a>&nbsp;&nbsp;<a href="#" class="btn btn-hollow btn-white">Sponsorship Opportunities</a></p>
                 </div>
             </div>
         </div>
     </section>
-    <section id="sponsors" class="dark-wrapper">
-        <div class="container text-center">
-            <h2>Proudly sponsored by</h2>
-        <div class="row">
-            
-        <div class="col-sm-10 col-sm-offset-1"> 
+
+    <section id="speakers">
+      <div class="container">
+      <h2 class="section-title">Speakers</h2>
+      <div class="row">
+      
+        <ul id="speaker-list" class="list-unstyled ">
+            <li class="speaker-list-item" data-mh="speaker-list-item">
+                <div class="speaker-photo-wrap">
+                    <img width="568" height="568" src="images/albert-poon-headshot.jpg" class="img-responsive" alt="headshot">
+                    <span class="corner"><span class="triangle"></span><span class="toggle"><span class="icon icon-plus3"></span></span></span>
+                </div>
+                <h3>Kirk Trosclair</h3>
+                <h5>Fountain Quail Energy Services</h5>
+                <div class="speaker-bio">
+                    <span class="overlay"></span>
+                    <p>Mr. Trosclair brings more than 21 years of diversified energy experience to Fountain Quail. His background includes drilling and exploration, engineering design, oilfield fluid terminal operations, logistics management, construction, and business development. Prior to serving the company as Executive Vice President and COO, Mr. Trosclair served as Director of Terminal Operations for GreenHunter Resources, Inc. Mr. Trosclair received his B.A. and A.S. in Petroleum Engineering Technology from Nicholls State University.</p>
+                    <ul class="speaker-social list-unstyled">
+                        <li><a href="#" target="_blank"><span class="icon icon-twitter"></span></a></li>
+                    </ul>
+                </div>
+            </li>
+             <li class="speaker-list-item" data-mh="speaker-list-item">
+                <div class="speaker-photo-wrap">
+                    <img width="568" height="568" src="images/ClementeMiller-Headshot.jpg" class="img-responsive" alt="headshot">
+                    <span class="corner"><span class="triangle"></span><span class="toggle"><span class="icon icon-plus3"></span></span></span>
+                </div>
+                <h3>M. Jason Pigott</h3>
+                <h5>Chesapeake Energy Corp.</h5>
+                <div class="speaker-bio">
+                    <span class="overlay"></span>
+                    <p>M. Jason Pigott was appointed Executive Vice President – Operations, Southern Division in January 2015. Before joining Chesapeake in August 2013, Mr. Pigott worked at Anadarko Petroleum Corporation, where he served as General Manager for its Eagle Ford team from June to August 2013 and the General Manager for the East Texas and North Louisiana team from October 2010 to June 2013. Prior to these roles, Mr. Pigott was the Planning Manager for Anadarko's Southern and Appalachia Region and held a wide variety of positions focused on all aspects of developing unconventional resources. Mr. Pigott graduated from Texas A&M in 1997.</p>
+                    <ul class="speaker-social list-unstyled">
+                        <li><a href="#" target="_blank"><span class="icon icon-twitter"></span></a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="speaker-list-item" data-mh="speaker-list-item">
+                <div class="speaker-photo-wrap">
+                    <img width="568" height="568" src="images/albert-poon-headshot.jpg" class="img-responsive" alt="headshot">
+                    <span class="corner"><span class="triangle"></span><span class="toggle"><span class="icon icon-plus3"></span></span></span>
+                </div>
+                <h3>Kirk Trosclair</h3>
+                <h5>Fountain Quail Energy Services</h5>
+                <div class="speaker-bio">
+                    <span class="overlay"></span>
+                    <p>Mr. Trosclair brings more than 21 years of diversified energy experience to Fountain Quail. His background includes drilling and exploration, engineering design, oilfield fluid terminal operations, logistics management, construction, and business development. Prior to serving the company as Executive Vice President and COO, Mr. Trosclair served as Director of Terminal Operations for GreenHunter Resources, Inc. Mr. Trosclair received his B.A. and A.S. in Petroleum Engineering Technology from Nicholls State University.</p>
+                    <ul class="speaker-social list-unstyled">
+                        <li><a href="#" target="_blank"><span class="icon icon-twitter"></span></a></li>
+                    </ul>
+                </div>
+            </li>
+             <li class="speaker-list-item" data-mh="speaker-list-item">
+                <div class="speaker-photo-wrap">
+                    <img width="568" height="568" src="images/ClementeMiller-Headshot.jpg" class="img-responsive" alt="headshot">
+                    <span class="corner"><span class="triangle"></span><span class="toggle"><span class="icon icon-plus3"></span></span></span>
+                </div>
+                <h3>M. Jason Pigott</h3>
+                <h5>Chesapeake Energy Corp.</h5>
+                <div class="speaker-bio">
+                    <span class="overlay"></span>
+                    <p>M. Jason Pigott was appointed Executive Vice President – Operations, Southern Division in January 2015. Before joining Chesapeake in August 2013, Mr. Pigott worked at Anadarko Petroleum Corporation, where he served as General Manager for its Eagle Ford team from June to August 2013 and the General Manager for the East Texas and North Louisiana team from October 2010 to June 2013. Prior to these roles, Mr. Pigott was the Planning Manager for Anadarko's Southern and Appalachia Region and held a wide variety of positions focused on all aspects of developing unconventional resources. Mr. Pigott graduated from Texas A&M in 1997.</p>
+                    <ul class="speaker-social list-unstyled">
+                        <li><a href="#" target="_blank"><span class="icon icon-twitter"></span></a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="speaker-list-item" data-mh="speaker-list-item">
+                <div class="speaker-photo-wrap">
+                    <img width="568" height="568" src="images/albert-poon-headshot.jpg" class="img-responsive" alt="headshot">
+                    <span class="corner"><span class="triangle"></span><span class="toggle"><span class="icon icon-plus3"></span></span></span>
+                </div>
+                <h3>Kirk Trosclair</h3>
+                <h5>Fountain Quail Energy Services</h5>
+                <div class="speaker-bio">
+                    <span class="overlay"></span>
+                    <p>Mr. Trosclair brings more than 21 years of diversified energy experience to Fountain Quail. His background includes drilling and exploration, engineering design, oilfield fluid terminal operations, logistics management, construction, and business development. Prior to serving the company as Executive Vice President and COO, Mr. Trosclair served as Director of Terminal Operations for GreenHunter Resources, Inc. Mr. Trosclair received his B.A. and A.S. in Petroleum Engineering Technology from Nicholls State University.</p>
+                    <ul class="speaker-social list-unstyled">
+                        <li><a href="#" target="_blank"><span class="icon icon-twitter"></span></a></li>
+                    </ul>
+                </div>
+            </li>
+             <li class="speaker-list-item" data-mh="speaker-list-item">
+                <div class="speaker-photo-wrap">
+                    <img width="568" height="568" src="images/ClementeMiller-Headshot.jpg" class="img-responsive" alt="headshot">
+                    <span class="corner"><span class="triangle"></span><span class="toggle"><span class="icon icon-plus3"></span></span></span>
+                </div>
+                <h3>M. Jason Pigott</h3>
+                <h5>Chesapeake Energy Corp.</h5>
+                <div class="speaker-bio">
+                    <span class="overlay"></span>
+                    <p>M. Jason Pigott was appointed Executive Vice President – Operations, Southern Division in January 2015. Before joining Chesapeake in August 2013, Mr. Pigott worked at Anadarko Petroleum Corporation, where he served as General Manager for its Eagle Ford team from June to August 2013 and the General Manager for the East Texas and North Louisiana team from October 2010 to June 2013. Prior to these roles, Mr. Pigott was the Planning Manager for Anadarko's Southern and Appalachia Region and held a wide variety of positions focused on all aspects of developing unconventional resources. Mr. Pigott graduated from Texas A&M in 1997.</p>
+                    <ul class="speaker-social list-unstyled">
+                        <li><a href="#" target="_blank"><span class="icon icon-twitter"></span></a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="speaker-list-item" data-mh="speaker-list-item">
+                <div class="speaker-photo-wrap">
+                    <img width="568" height="568" src="images/albert-poon-headshot.jpg" class="img-responsive" alt="headshot">
+                    <span class="corner"><span class="triangle"></span><span class="toggle"><span class="icon icon-plus3"></span></span></span>
+                </div>
+                <h3>Kirk Trosclair</h3>
+                <h5>Fountain Quail Energy Services</h5>
+                <div class="speaker-bio">
+                    <span class="overlay"></span>
+                    <p>Mr. Trosclair brings more than 21 years of diversified energy experience to Fountain Quail. His background includes drilling and exploration, engineering design, oilfield fluid terminal operations, logistics management, construction, and business development. Prior to serving the company as Executive Vice President and COO, Mr. Trosclair served as Director of Terminal Operations for GreenHunter Resources, Inc. Mr. Trosclair received his B.A. and A.S. in Petroleum Engineering Technology from Nicholls State University.</p>
+                    <ul class="speaker-social list-unstyled">
+                        <li><a href="#" target="_blank"><span class="icon icon-twitter"></span></a></li>
+                    </ul>
+                </div>
+            </li>
+             <li class="speaker-list-item" data-mh="speaker-list-item">
+                <div class="speaker-photo-wrap">
+                    <img width="568" height="568" src="images/ClementeMiller-Headshot.jpg" class="img-responsive" alt="headshot">
+                    <span class="corner"><span class="triangle"></span><span class="toggle"><span class="icon icon-plus3"></span></span></span>
+                </div>
+                <h3>M. Jason Pigott</h3>
+                <h5>Chesapeake Energy Corp.</h5>
+                <div class="speaker-bio">
+                    <span class="overlay"></span>
+                    <p>M. Jason Pigott was appointed Executive Vice President – Operations, Southern Division in January 2015. Before joining Chesapeake in August 2013, Mr. Pigott worked at Anadarko Petroleum Corporation, where he served as General Manager for its Eagle Ford team from June to August 2013 and the General Manager for the East Texas and North Louisiana team from October 2010 to June 2013. Prior to these roles, Mr. Pigott was the Planning Manager for Anadarko's Southern and Appalachia Region and held a wide variety of positions focused on all aspects of developing unconventional resources. Mr. Pigott graduated from Texas A&M in 1997.</p>
+                    <ul class="speaker-social list-unstyled">
+                        <li><a href="#" target="_blank"><span class="icon icon-twitter"></span></a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="speaker-list-item" data-mh="speaker-list-item">
+                <div class="speaker-photo-wrap">
+                    <img width="568" height="568" src="images/albert-poon-headshot.jpg" class="img-responsive" alt="headshot">
+                    <span class="corner"><span class="triangle"></span><span class="toggle"><span class="icon icon-plus3"></span></span></span>
+                </div>
+                <h3>Kirk Trosclair</h3>
+                <h5>Fountain Quail Energy Services</h5>
+                <div class="speaker-bio">
+                    <span class="overlay"></span>
+                    <p>Mr. Trosclair brings more than 21 years of diversified energy experience to Fountain Quail. His background includes drilling and exploration, engineering design, oilfield fluid terminal operations, logistics management, construction, and business development. Prior to serving the company as Executive Vice President and COO, Mr. Trosclair served as Director of Terminal Operations for GreenHunter Resources, Inc. Mr. Trosclair received his B.A. and A.S. in Petroleum Engineering Technology from Nicholls State University.</p>
+                    <ul class="speaker-social list-unstyled">
+                        <li><a href="#" target="_blank"><span class="icon icon-twitter"></span></a></li>
+                    </ul>
+                </div>
+            </li>
+             <li class="speaker-list-item" data-mh="speaker-list-item">
+                <div class="speaker-photo-wrap">
+                    <img width="568" height="568" src="images/ClementeMiller-Headshot.jpg" class="img-responsive" alt="headshot">
+                    <span class="corner"><span class="triangle"></span><span class="toggle"><span class="icon icon-plus3"></span></span></span>
+                </div>
+                <h3>M. Jason Pigott</h3>
+                <h5>Chesapeake Energy Corp.</h5>
+                <div class="speaker-bio">
+                    <span class="overlay"></span>
+                    <p>M. Jason Pigott was appointed Executive Vice President – Operations, Southern Division in January 2015. Before joining Chesapeake in August 2013, Mr. Pigott worked at Anadarko Petroleum Corporation, where he served as General Manager for its Eagle Ford team from June to August 2013 and the General Manager for the East Texas and North Louisiana team from October 2010 to June 2013. Prior to these roles, Mr. Pigott was the Planning Manager for Anadarko's Southern and Appalachia Region and held a wide variety of positions focused on all aspects of developing unconventional resources. Mr. Pigott graduated from Texas A&M in 1997.</p>
+                    <ul class="speaker-social list-unstyled">
+                        <li><a href="#" target="_blank"><span class="icon icon-twitter"></span></a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="speaker-list-item" data-mh="speaker-list-item">
+                <div class="speaker-photo-wrap">
+                    <img width="568" height="568" src="images/albert-poon-headshot.jpg" class="img-responsive" alt="headshot">
+                    <span class="corner"><span class="triangle"></span><span class="toggle"><span class="icon icon-plus3"></span></span></span>
+                </div>
+                <h3>Kirk Trosclair</h3>
+                <h5>Fountain Quail Energy Services</h5>
+                <div class="speaker-bio">
+                    <span class="overlay"></span>
+                    <p>Mr. Trosclair brings more than 21 years of diversified energy experience to Fountain Quail. His background includes drilling and exploration, engineering design, oilfield fluid terminal operations, logistics management, construction, and business development. Prior to serving the company as Executive Vice President and COO, Mr. Trosclair served as Director of Terminal Operations for GreenHunter Resources, Inc. Mr. Trosclair received his B.A. and A.S. in Petroleum Engineering Technology from Nicholls State University.</p>
+                    <ul class="speaker-social list-unstyled">
+                        <li><a href="#" target="_blank"><span class="icon icon-twitter"></span></a></li>
+                    </ul>
+                </div>
+            </li>
+             <li class="speaker-list-item" data-mh="speaker-list-item">
+                <div class="speaker-photo-wrap">
+                    <img width="568" height="568" src="images/ClementeMiller-Headshot.jpg" class="img-responsive" alt="headshot">
+                    <span class="corner"><span class="triangle"></span><span class="toggle"><span class="icon icon-plus3"></span></span></span>
+                </div>
+                <h3>M. Jason Pigott</h3>
+                <h5>Chesapeake Energy Corp.</h5>
+                <div class="speaker-bio">
+                    <span class="overlay"></span>
+                    <p>M. Jason Pigott was appointed Executive Vice President – Operations, Southern Division in January 2015. Before joining Chesapeake in August 2013, Mr. Pigott worked at Anadarko Petroleum Corporation, where he served as General Manager for its Eagle Ford team from June to August 2013 and the General Manager for the East Texas and North Louisiana team from October 2010 to June 2013. Prior to these roles, Mr. Pigott was the Planning Manager for Anadarko's Southern and Appalachia Region and held a wide variety of positions focused on all aspects of developing unconventional resources. Mr. Pigott graduated from Texas A&M in 1997.</p>
+                    <ul class="speaker-social list-unstyled">
+                        <li><a href="#" target="_blank"><span class="icon icon-twitter"></span></a></li>
+                    </ul>
+                </div>
+            </li>
+        
+        </ul>
+    
+      </div>
+      <p style="text-align:center;margin-top: 30px;"><a href="#" class="btn btn-blue">See All Speakers</a></p>
+      </div>
+  </section>
+
+    <hr/>
+
+    <section id="news">
+        <div class="container">
+            <h2 class="section-title">Latest News</h2>
+
             <div class="row">
-                <div class="col-md-4 col-sm-6 sponsor-column">
-                    <div class="sponsor text-center">
-                        <img width="500" height="140" src="http://9y77o4m61q33w2nw1xhml112.wpengine.netdna-cdn.com/wp-content/uploads/2015/01/sponsor6.png" class="attachment-full size-full wp-post-image" alt="sponsor6" srcset="http://9y77o4m61q33w2nw1xhml112.wpengine.netdna-cdn.com/wp-content/uploads/2015/01/sponsor6.png 500w, http://9y77o4m61q33w2nw1xhml112.wpengine.netdna-cdn.com/wp-content/uploads/2015/01/sponsor6-300x84.png 300w" sizes="(max-width: 500px) 100vw, 500px">  </div>
+                <div class="col-sm-4">
+
+                    <h3>Bankruptcy Judge Approves Breitburn Stakeholders Committee</h3>
+                    <p>Equity investors in Breitburn Energy Partners LP can receive representation on an official committee, a U.S. bankruptcy court said on Oct. 14, giving investors in the bankrupt oil and gas company a voice in restructuring negotiations.</p>
+                    <p><a href="#" class="text-link">Read more</a></p>
                 </div>
-                <div class="col-md-4 col-sm-6 sponsor-column">
-                    <div class="sponsor text-center">
-                        <img width="500" height="273" src="http://9y77o4m61q33w2nw1xhml112.wpengine.netdna-cdn.com/wp-content/uploads/2015/01/sponsor4.png" class="attachment-full size-full wp-post-image" alt="sponsor4" srcset="http://9y77o4m61q33w2nw1xhml112.wpengine.netdna-cdn.com/wp-content/uploads/2015/01/sponsor4.png 500w, http://9y77o4m61q33w2nw1xhml112.wpengine.netdna-cdn.com/wp-content/uploads/2015/01/sponsor4-300x164.png 300w" sizes="(max-width: 500px) 100vw, 500px"> </div>
+                <div class="col-sm-4">
+
+                    <h3>Bankruptcy Judge Approves Breitburn Stakeholders Committee</h3>
+                    <p>Equity investors in Breitburn Energy Partners LP can receive representation on an official committee, a U.S. bankruptcy court said on Oct. 14, giving investors in the bankrupt oil and gas company a voice in restructuring negotiations.</p>
+                    <p><a href="#" class="text-link">Read more</a></p>
                 </div>
-                <div class="col-md-4 col-sm-6 sponsor-column">
-                    <div class="sponsor text-center">
-                        <img width="500" height="140" src="http://9y77o4m61q33w2nw1xhml112.wpengine.netdna-cdn.com/wp-content/uploads/2015/01/sponsor5.png" class="attachment-full size-full wp-post-image" alt="sponsor5" srcset="http://9y77o4m61q33w2nw1xhml112.wpengine.netdna-cdn.com/wp-content/uploads/2015/01/sponsor5.png 500w, http://9y77o4m61q33w2nw1xhml112.wpengine.netdna-cdn.com/wp-content/uploads/2015/01/sponsor5-300x84.png 300w" sizes="(max-width: 500px) 100vw, 500px">  </div>
+                <div class="col-sm-4">
+
+                    <h3>Bankruptcy Judge Approves Breitburn Stakeholders Committee</h3>
+                    <p>Equity investors in Breitburn Energy Partners LP can receive representation on an official committee, a U.S. bankruptcy court said on Oct. 14, giving investors in the bankrupt oil and gas company a voice in restructuring negotiations.</p>
+                    <p><a href="#" class="text-link">Read more</a></p>
                 </div>
-                <div class="col-md-4 col-sm-6 sponsor-column">
-                    <div class="sponsor text-center">
-                        <img width="477" height="157" src="http://9y77o4m61q33w2nw1xhml112.wpengine.netdna-cdn.com/wp-content/uploads/2015/01/sponsor3.png" class="attachment-full size-full wp-post-image" alt="sponsor3" srcset="http://9y77o4m61q33w2nw1xhml112.wpengine.netdna-cdn.com/wp-content/uploads/2015/01/sponsor3.png 477w, http://9y77o4m61q33w2nw1xhml112.wpengine.netdna-cdn.com/wp-content/uploads/2015/01/sponsor3-300x99.png 300w" sizes="(max-width: 477px) 100vw, 477px">  </div>
-                </div>
-                <div class="col-md-4 col-sm-6 sponsor-column">
-                    <div class="sponsor text-center">
-                        <img width="512" height="384" src="http://9y77o4m61q33w2nw1xhml112.wpengine.netdna-cdn.com/wp-content/uploads/2015/01/sponsor2.png" class="attachment-full size-full wp-post-image" alt="sponsor2" srcset="http://9y77o4m61q33w2nw1xhml112.wpengine.netdna-cdn.com/wp-content/uploads/2015/01/sponsor2.png 512w, http://9y77o4m61q33w2nw1xhml112.wpengine.netdna-cdn.com/wp-content/uploads/2015/01/sponsor2-300x225.png 300w" sizes="(max-width: 512px) 100vw, 512px"> </div>
-                </div>
-                <div class="col-md-4 col-sm-6 sponsor-column">
-                    <div class="sponsor text-center">
-                        <img width="310" height="140" src="http://9y77o4m61q33w2nw1xhml112.wpengine.netdna-cdn.com/wp-content/uploads/2015/01/sponsor1.png" class="attachment-full size-full wp-post-image" alt="sponsor1" srcset="http://9y77o4m61q33w2nw1xhml112.wpengine.netdna-cdn.com/wp-content/uploads/2015/01/sponsor1.png 310w, http://9y77o4m61q33w2nw1xhml112.wpengine.netdna-cdn.com/wp-content/uploads/2015/01/sponsor1-300x135.png 300w" sizes="(max-width: 310px) 100vw, 310px"> </div>
+
+            </div>
+        </div>
+    </section>
+
+   <section id="sponsors" class="dark-wrapper">
+        <div class="container text-center">
+            <h2 class="section-title">Proudly sponsored by</h2>
+            
+            <div class="row">
+            
+                <div class="col-sm-10 col-sm-offset-1"> 
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 sponsor-column">
+                            <div class="sponsor text-center">
+                                <img width="500" height="140" src="http://9y77o4m61q33w2nw1xhml112.wpengine.netdna-cdn.com/wp-content/uploads/2015/01/sponsor6.png" class="attachment-full size-full wp-post-image" alt="sponsor6" srcset="http://9y77o4m61q33w2nw1xhml112.wpengine.netdna-cdn.com/wp-content/uploads/2015/01/sponsor6.png 500w, http://9y77o4m61q33w2nw1xhml112.wpengine.netdna-cdn.com/wp-content/uploads/2015/01/sponsor6-300x84.png 300w" sizes="(max-width: 500px) 100vw, 500px">  </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 sponsor-column">
+                            <div class="sponsor text-center">
+                                <img width="500" height="273" src="http://9y77o4m61q33w2nw1xhml112.wpengine.netdna-cdn.com/wp-content/uploads/2015/01/sponsor4.png" class="attachment-full size-full wp-post-image" alt="sponsor4" srcset="http://9y77o4m61q33w2nw1xhml112.wpengine.netdna-cdn.com/wp-content/uploads/2015/01/sponsor4.png 500w, http://9y77o4m61q33w2nw1xhml112.wpengine.netdna-cdn.com/wp-content/uploads/2015/01/sponsor4-300x164.png 300w" sizes="(max-width: 500px) 100vw, 500px"> </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 sponsor-column">
+                            <div class="sponsor text-center">
+                                <img width="500" height="140" src="http://9y77o4m61q33w2nw1xhml112.wpengine.netdna-cdn.com/wp-content/uploads/2015/01/sponsor5.png" class="attachment-full size-full wp-post-image" alt="sponsor5" srcset="http://9y77o4m61q33w2nw1xhml112.wpengine.netdna-cdn.com/wp-content/uploads/2015/01/sponsor5.png 500w, http://9y77o4m61q33w2nw1xhml112.wpengine.netdna-cdn.com/wp-content/uploads/2015/01/sponsor5-300x84.png 300w" sizes="(max-width: 500px) 100vw, 500px">  </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 sponsor-column">
+                            <div class="sponsor text-center">
+                                <img width="477" height="157" src="http://9y77o4m61q33w2nw1xhml112.wpengine.netdna-cdn.com/wp-content/uploads/2015/01/sponsor3.png" class="attachment-full size-full wp-post-image" alt="sponsor3" srcset="http://9y77o4m61q33w2nw1xhml112.wpengine.netdna-cdn.com/wp-content/uploads/2015/01/sponsor3.png 477w, http://9y77o4m61q33w2nw1xhml112.wpengine.netdna-cdn.com/wp-content/uploads/2015/01/sponsor3-300x99.png 300w" sizes="(max-width: 477px) 100vw, 477px">  </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 sponsor-column">
+                            <div class="sponsor text-center">
+                                <img width="512" height="384" src="http://9y77o4m61q33w2nw1xhml112.wpengine.netdna-cdn.com/wp-content/uploads/2015/01/sponsor2.png" class="attachment-full size-full wp-post-image" alt="sponsor2" srcset="http://9y77o4m61q33w2nw1xhml112.wpengine.netdna-cdn.com/wp-content/uploads/2015/01/sponsor2.png 512w, http://9y77o4m61q33w2nw1xhml112.wpengine.netdna-cdn.com/wp-content/uploads/2015/01/sponsor2-300x225.png 300w" sizes="(max-width: 512px) 100vw, 512px"> </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 sponsor-column">
+                            <div class="sponsor text-center">
+                                <img width="310" height="140" src="http://9y77o4m61q33w2nw1xhml112.wpengine.netdna-cdn.com/wp-content/uploads/2015/01/sponsor1.png" class="attachment-full size-full wp-post-image" alt="sponsor1" srcset="http://9y77o4m61q33w2nw1xhml112.wpengine.netdna-cdn.com/wp-content/uploads/2015/01/sponsor1.png 310w, http://9y77o4m61q33w2nw1xhml112.wpengine.netdna-cdn.com/wp-content/uploads/2015/01/sponsor1-300x135.png 300w" sizes="(max-width: 310px) 100vw, 310px"> </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-        </div>
             <p style="text-align: center;">Interested in becoming a sponsor? <a href="#" class="text-link">Get in touch</a></p>
-        </div>
+       
     </section>
 
     <section id="subscribe">
@@ -402,30 +650,36 @@ Oklahoma City, OK 73102</p>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="scripts/app.js"></script>
     <script>
-        // Disable scroll zooming and bind back the click event
-        var onMapMouseleaveHandler = function (event) {
-          var that = $(this);
+        //$('.showcaseVideo').coverVid(1920, 1080);
+        //$('#speakers .card').matchHeight();
+        $('#leanMoreButton').click(function() {
+            $(window).scrollTo(document.getElementById('about'),800,{offset:-80});
+        });
+        $('.speaker-photo-wrap').on('click', function(event){
+                event.preventDefault();
+                $(this).parent('li').toggleClass('active').children('.speaker-bio').toggleClass('active').parent('li').siblings('li').removeClass('active').children('.speaker-bio').removeClass('active');
+                //$('.speaker-list-item.active').css("margin-bottom", $(this).siblings('.speaker-bio').outerHeight());
 
-          that.on('click', onMapClickHandler);
-          that.off('mouseleave', onMapMouseleaveHandler);
-          that.find('iframe').css("pointer-events", "none");
-        }
+                if ($(this).parent('li').hasClass('active')){
+                    $(this).parent('li').css("margin-bottom", $(this).siblings('.speaker-bio').outerHeight(true)).siblings('li').removeAttr("style");
+                } else {
+                    $(this).parent('li').removeAttr("style");
+                  }
 
-        var onMapClickHandler = function (event) {
-          var that = $(this);
+        });
+        $('.speaker-list-item h3').on('click', function(event){
+                event.preventDefault();
+                $(this).parent('li').toggleClass('active').children('.speaker-bio').toggleClass('active').parent('li').siblings('li').removeClass('active').children('.speaker-bio').removeClass('active');
+                //$('.speaker-list-item.active').css("margin-bottom", $(this).siblings('.speaker-bio').outerHeight());
 
-          // Disable the click handler until the user leaves the map area
-          that.off('click', onMapClickHandler);
+                if ($(this).parent('li').hasClass('active')){
+                    $(this).parent('li').css("margin-bottom", $(this).siblings('.speaker-bio').outerHeight(true)).siblings('li').removeAttr("style");
+                } else {
+                    $(this).parent('li').removeAttr("style");
+                  }
 
-          // Enable scrolling zoom
-          that.find('iframe').css("pointer-events", "auto");
+        });
 
-          // Handle the mouse leave event
-          that.on('mouseleave', onMapMouseleaveHandler);
-        }
-
-        // Enable map zooming with mouse scroll when the user clicks the map
-        $('#map').on('click', onMapClickHandler);
     </script>
 
   </body>
