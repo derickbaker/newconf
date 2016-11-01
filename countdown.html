@@ -10,7 +10,7 @@
     <meta name="author" content="">
     
 
-    <title>Hero Slider | Conference</title>
+    <title>Countdown | Conference</title>
 
     <link href="styles/animsition.css" rel="stylesheet">
     <link href="styles/styles.css" rel="stylesheet">
@@ -164,89 +164,21 @@
        
   </header>
 
-    <section id="showcase" class="hero-slider">
-        <ul class="slides ">
-            <li class="hero-slide">
-                <div class="background-image-holder" style="background: url('images/page-header.jpg') 50% 0%;"></div>
-                <div class="container">
-                        <div class="row">
-                            <div class="col-sm-12 text">
-                                <!-- <p><img src="images/conf-logo@2x.png" height="200" /></p> -->
-                                <p class="lead">September 12th to 14th - San Antonio, Texas</p>
-                                <h1>At A Crossroads Looking Toward Tomorrow</h1>
-                                <p class="lead">As signs of a market recovery take hold, industry leaders' questions are shifting from "how low will it go, and how long?" to "how much will it recover, and how quickly?" Texas' prolific Permian Basin is already experiencing a surge in activity.</p>
-                                <p><a href="#" class="btn btn-register" target="_self">Register Now</a><a href="#" id="leanMoreButton" class="btn btn-hollow btn-white" target="_self">Learn More</a></p>
-                            </div>
-                        </div>
-                </div>
-            </li>
-            <li class="hero-slide">
-                <div class="background-image-holder" style="background: url('images/page-header_2.jpg') 50% 0%;"></div>
-                <div class="container">
-                        <div class="row">
-                            <div class="col-sm-12 text">
-                                <!-- <p><img src="images/conf-logo@2x.png" height="200" /></p> -->
-                                <h1>Companies throughout the Eagle Ford gather in San Antonio to explore cost-saving solutions</h1>
-                                <p><a href="#" class="btn btn-register" target="_self">Register Now</a><a href="#" id="leanMoreButton" class="btn btn-hollow btn-white" target="_self">Learn More</a></p>
-                            </div>
-                        </div>
-                </div>
-            </li>
-            <li class="hero-slide">
-                <div class="background-image-holder" style="background: url('https://industryvoice.com/images/events-bg.jpg') 50% 0%;"></div>
-                <div class="container">
-                        <div class="row">
-                            <div class="col-sm-12 text">
-                                <!-- <p><img src="images/conf-logo@2x.png" height="200" /></p> -->
-
-                                <h1>DUG Eagle Ford and MIDSTREAM Texas will return to the Henry B. Gonzalez Convention Center in San Antonio August 29-31.</h1>
-                                <p><a href="#" class="btn btn-register" target="_self">Register Now</a><a href="#" id="leanMoreButton" class="btn btn-hollow btn-white" target="_self">Learn More</a></p>
-                            </div>
-                        </div>
-                </div>
-            </li>
-           
-          </ul>
-            <div class="custom-navigation">
-              <a href="#" class="flex-prev"><span class="icon icon-chevron-left"></span></a>
-              <div class="custom-controls-container"></div>
-              <a href="#" class="flex-next"><span class="icon icon-chevron-right"></span></a>
-            </div>
-    </section><!-- / #hero -->
-    <section id="promo">
-        <div class="color-block block-left col-md-6 col-sm-12"></div>
-        <div class="color-block block-right col-md-6 col-sm-12"></div>
+    <section id="showcase" class="countdown primary-overlay">
+        
+        <div class="background" style="background-image:url(images/video-fallback.jpg);" ></div>
         <div class="container">
             <div class="row">
-
-              
-                    <a href="#" class="block-content">
-                        <div class="col-md-2 col-sm-4 text-center">
-                            <span class="icon icon-cash-dollar"></span>
-                        </div>
-                    
-                        <div class="col-md-4 col-sm-8">
-                            <h2>Purchase an early bird ticket and save!</h2>
-                            <p>Catch our Early Bird special and save 20% off your ticket, be quick before they sell out!</p>
-
-                        </div>
-                    </a>
-           
-                    <a href="" class="block-content">
-                        <div class="col-md-2 col-sm-4 text-center">
-                            <i class="icon icon-smartphone"></i>
-                        </div>
-                    
-                        <div class="col-md-4 col-sm-8">
-                            <h2>Download the conference app and stay informed!</h2>
-                            <p>Available on iOS and Android, the conference app includes directions, schedule info and more!</p>
-
-                        </div>
-                    </a>
-              
+                <div class="text col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
+                    <!-- <p><img src="images/conf-logo@2x.png" height="200" /></p> -->
+                    <p class="lead">September 12th to 14th - San Antonio, Texas</p>
+                    <h1>At A Crossroads Looking Toward Tomorrow</h1>
+                    <div id="countdown" class="row"></div>
+                </div>
             </div>
-        </div>
-    </section>
+      </div>
+    </section><!-- / #hero -->
+   
      <section id="about">
         <div class="container">
             
@@ -686,13 +618,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="scripts/app.js"></script>
     <script>
-        //$('.showcaseVideo').coverVid(1920, 1080);
-        //$('#speakers .card').matchHeight();
-        $(window).load(function() {
-          $('.hero-slider').flexslider({
-            animation: "slide",
-            customDirectionNav: $(".custom-navigation a")
-          });
+        $('#countdown').countdown('2017/04/20', function(event) {
+          var $this = $(this).html(event.strftime(''
+            + '<div class="countdown-section col-xs-3"><span class="countdown-amount">%D</span><span class="countdown-period">days</span></div>'
+            + '<div class="countdown-section col-xs-3"><span class="countdown-amount">%H</span><span class="countdown-period">hours</span></div>'
+            + '<div class="countdown-section col-xs-3"><span class="countdown-amount">%M</span><span class="countdown-period">minutes</span></div>'
+            + '<div class="countdown-section col-xs-3"><span class="countdown-amount">%S</span><span class="countdown-period">seconds</span></div>'));
         });
         $('#leanMoreButton').click(function() {
             $(window).scrollTo(document.getElementById('about'),800,{offset:-80});
@@ -718,7 +649,7 @@
                     $(this).parent('li').css("margin-bottom", $(this).siblings('.speaker-bio').outerHeight(true)).siblings('li').removeAttr("style");
                 } else {
                     $(this).parent('li').removeAttr("style");
-                  }
+                }
 
         });
 

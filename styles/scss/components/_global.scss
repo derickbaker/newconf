@@ -75,11 +75,11 @@ input[type="tel"] {
   transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
-  font-weight: 600;
+  font-weight: $fw-reg;
   line-height: 1;
   &:hover {
     color: #fff;
-    background: $blue;
+    background: $blueD1;
   }
 }
 
@@ -97,7 +97,7 @@ input[type="tel"] {
   background: #fff;
   color: $blue !important;
   &:hover {
-    background: #fff;
+    background: darken($wht,15%);
     color: $blueD2;
   }
 }
@@ -106,7 +106,8 @@ input[type="tel"] {
   background: none;
   border-color: #fff;
   color: #fff !important;
-  &:hover {
+  &:hover,
+  &:focus {
     background: #fff;
     color: $blue !important;
   }

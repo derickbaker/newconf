@@ -73,17 +73,7 @@
             font-weight: $fw-reg;
         }
         .btn-hollow {
-            color: $wht;
-            border-color: $wht;
             margin-left: 1em;
-
-            &:hover,
-            &:focus {
-                background-color: $wht;
-                box-shadow: none;
-                color: $off-blk;
-                transition: 0.25s;
-            }
         }
 
         @media (min-width: $screen-sm-min) { 
@@ -196,6 +186,45 @@
             &.flex-next {
                 right: 0px;
                 text-align: right;
+            }
+        }
+    }
+    &.primary-overlay {
+
+        &:before {
+            background-color: $blue;
+            content: '';
+            height: 100%;
+            opacity: 0.8;
+            position: absolute;
+            top: 0px;
+            width: 100%;
+            z-index: 1;
+        }
+    }
+    &.countdown {
+
+        #countdown {
+            font-size: 32px;
+            font-family: $ff-lato;
+            font-weight: $fw-thin;
+            text-align: center;
+
+            .countdown-amount {
+                display: inline-block;
+            }
+            .countdown-period {
+                display: block;
+                font-size: 16px;
+                font-weight: $fw-thin;
+            }
+
+            @media (min-width: $screen-sm-min) {
+                font-size: 80px;
+
+                .countdown-period {
+                    font-size: 24px;
+                }
             }
         }
     }

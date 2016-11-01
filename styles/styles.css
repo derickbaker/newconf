@@ -6016,11 +6016,11 @@ input[type="tel"]:focus {
   transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1; }
   .btn:hover {
     color: #fff;
-    background: #2196F3; }
+    background: #0c7cd5; }
 
 .btn-hollow {
   background: none;
@@ -6034,14 +6034,14 @@ input[type="tel"]:focus {
   background: #fff;
   color: #2196F3 !important; }
   .btn-white:hover {
-    background: #fff;
+    background: #d9d9d9;
     color: #0960a5; }
 
 .btn-hollow.btn-white {
   background: none;
   border-color: #fff;
   color: #fff !important; }
-  .btn-hollow.btn-white:hover {
+  .btn-hollow.btn-white:hover, .btn-hollow.btn-white:focus {
     background: #fff;
     color: #2196F3 !important; }
 
@@ -6603,10 +6603,13 @@ p.question {
             -ms-transform: rotate(45deg);
                 transform: rotate(45deg); }
   #fullMenu .accordion .submenu {
+    list-style: none;
     padding-left: 20px; }
     #fullMenu .accordion .submenu > li > a {
-      color: rgba(255, 255, 255, 0.9); }
+      color: rgba(255, 255, 255, 0.8);
+      line-height: 24px; }
       #fullMenu .accordion .submenu > li > a:hover {
+        color: #fff;
         text-decoration: none; }
 
 #showcase {
@@ -6680,16 +6683,7 @@ p.question {
     #showcase .text .btn {
       font-weight: 400; }
     #showcase .text .btn-hollow {
-      color: #fff;
-      border-color: #fff;
       margin-left: 1em; }
-      #showcase .text .btn-hollow:hover, #showcase .text .btn-hollow:focus {
-        background-color: #fff;
-        -webkit-box-shadow: none;
-                box-shadow: none;
-        color: #333333;
-        -webkit-transition: 0.25s;
-        transition: 0.25s; }
     @media (min-width: 768px) {
       #showcase .text h1 {
         font-size: 4em;
@@ -6774,6 +6768,31 @@ p.question {
       #showcase.hero-slider .custom-navigation a.flex-next {
         right: 0px;
         text-align: right; }
+  #showcase.primary-overlay:before {
+    background-color: #2196F3;
+    content: '';
+    height: 100%;
+    opacity: 0.8;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    z-index: 1; }
+  #showcase.countdown #countdown {
+    font-size: 32px;
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    text-align: center; }
+    #showcase.countdown #countdown .countdown-amount {
+      display: inline-block; }
+    #showcase.countdown #countdown .countdown-period {
+      display: block;
+      font-size: 16px;
+      font-weight: 100; }
+    @media (min-width: 768px) {
+      #showcase.countdown #countdown {
+        font-size: 80px; }
+        #showcase.countdown #countdown .countdown-period {
+          font-size: 24px; } }
 
 #footer {
   background-color: #1a1a1a;

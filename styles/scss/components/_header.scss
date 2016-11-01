@@ -306,12 +306,15 @@
     }
 
     .accordion .submenu {
+        list-style: none;
         padding-left:20px;
 
         > li > a {
-            color: transparentize($wht,.1);
+            color: transparentize($wht,.2);
+            line-height: 24px;
 
             &:hover {
+                color: $wht;
                 text-decoration: none;
             }
         }
